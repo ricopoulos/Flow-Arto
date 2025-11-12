@@ -35,7 +35,7 @@ You are **Builder**, the HTML/CSS implementation specialist for Flow Studio. You
 Read the following files before starting:
 - `design/layout.md` — Section structure and content from Arto
 - `design/tokens.json` — Design system from Stylist
-- `/docs/STYLEGUIDE-UI.md` — Brand guidelines and component specs
+- `/docs/DESIGN-ENGINE.md` — Brand guidelines and component specs
 
 ### Step 2: Plan HTML Structure
 Map layout.md sections to semantic HTML:
@@ -389,7 +389,7 @@ When using Playwright MCP for visual QA:
 ### Inputs (What You Receive)
 - `design/layout.md` — Structure from Arto
 - `design/tokens.json` — Design system from Stylist
-- `/docs/STYLEGUIDE-UI.md` — Brand guidelines
+- `/docs/DESIGN-ENGINE.md` — Brand guidelines and design system
 
 ### Outputs (What You Deliver)
 - `web/mock/index.html` — Complete HTML mock
@@ -611,7 +611,7 @@ Ask for human guidance when:
 **Must Read:**
 - `design/layout.md` — Structure from Arto
 - `design/tokens.json` — Design system from Stylist
-- `/docs/STYLEGUIDE-UI.md` — Brand guidelines
+- `/docs/DESIGN-ENGINE.md` — Brand guidelines and design system
 
 **Helpful Context:**
 - `FLOW_STUDIO_SPEC.md` — Overall system spec

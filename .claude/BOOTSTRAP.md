@@ -35,7 +35,7 @@ Flow-Arto/
 │   │   └── curator-evaluator.md          ← Evaluation & rationale
 │   └── BOOTSTRAP.md                       ← This file
 ├── docs/
-│   └── STYLEGUIDE-UI.md                   ← Brand & design system
+│   └── DESIGN-ENGINE.md                    ← Brand & design system engine
 ├── design/
 │   ├── layout.md                          ← Generated layout structure
 │   ├── tokens.json                        ← Generated design tokens
@@ -55,7 +55,7 @@ Flow-Arto/
 ### 1. Arto (UI/UX Strategist)
 - **Input:** User intent, target audience, tone
 - **Output:** `design/layout.md` with structure and content hierarchy
-- **Reads:** `docs/STYLEGUIDE-UI.md`
+- **Reads:** `docs/DESIGN-ENGINE.md`
 
 ### 2. Stylist (Design Polish)
 - **Input:** Layout requirements, brand guidelines
@@ -141,7 +141,7 @@ Curator provides final assessment:
 
 ## 🎨 Design System
 
-All designs follow the brand guidelines in `docs/STYLEGUIDE-UI.md`:
+All designs follow the brand guidelines in `docs/DESIGN-ENGINE.md`:
 
 **Key Principles:**
 - **Aesthetic:** Elegant, premium-medical
@@ -212,8 +212,8 @@ Or manually copy values to CSS custom properties.
 
 ## 🐛 Troubleshooting
 
-### "Cannot find STYLEGUIDE-UI.md"
-Ensure `docs/STYLEGUIDE-UI.md` exists. Arto agent requires this file.
+### "Cannot find DESIGN-ENGINE.md"
+Ensure `docs/DESIGN-ENGINE.md` exists. Arto agent requires this file.
 
 ### "Design tokens validation failed"
 Check contrast ratios in `design/tokens.json`. Body text needs ≥7:1, buttons ≥4.5:1.
@@ -232,7 +232,7 @@ Check `web/mock/index.html` for:
 ## 📚 Reference Documents
 
 - **Master Spec:** `FLOW_STUDIO_SPEC.md`
-- **Style Guide:** `docs/STYLEGUIDE-UI.md`
+- **Design Engine:** `docs/DESIGN-ENGINE.md`
 - **Agent Definitions:** `.claude/agents/*.md`
 - **Generated Artifacts:** `design/` and `web/mock/`
 
@@ -272,7 +272,7 @@ Claude: [Updates tokens and rebuilds affected components]
 1. **Be specific:** The more detail you provide about audience and goals, the better the output
 2. **Review at gates:** Don't skip the review gates — they ensure quality
 3. **Iterate freely:** You can always ask for adjustments after any phase
-4. **Reference the style guide:** All designs inherit from `STYLEGUIDE-UI.md`
+4. **Reference the design engine:** All designs inherit from `DESIGN-ENGINE.md`
 5. **Test accessibility:** Use browser dev tools to verify contrast and keyboard nav
 
 ---
