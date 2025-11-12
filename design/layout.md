@@ -1,9 +1,9 @@
 # Layout Structure: Flow Studio Sample Landing Page
 
 ## Overview
-- **Target Audience:** Design-conscious developers and product teams seeking elegant, accessible design systems
-- **Primary Goal:** Demonstrate Flow Studio's capability to generate beautiful, systematic design outputs
-- **Tone:** Professional, elegant, trustworthy with premium aesthetic
+- **Target Audience:** Design-conscious developers and product teams seeking adaptable, accessible design systems
+- **Primary Goal:** Demonstrate Flow Studio's capability to generate beautiful, systematic design outputs for any aesthetic
+- **Tone:** Professional, intelligent, adaptable
 
 ---
 
@@ -15,16 +15,16 @@
 **Layout:** Centered, single-column layout with balanced whitespace
 
 **Content:**
-- **Headline:** "Elegant Design Systems, Generated Naturally"
-- **Subheadline:** "Transform natural language into beautiful, accessible landing pages with Flow Studio's intelligent design engine."
+- **Headline:** "Any Design System, Generated Naturally"
+- **Subheadline:** "Transform natural language into beautiful, accessible landing pages. From premium medical to playful SaaS — Flow Studio adapts to your aesthetic."
 - **Primary CTA:** "Start Creating"
 - **Secondary CTA:** "View Documentation"
-- **Visual:** Abstract gradient background with subtle medical/premium aesthetic (suggested: soft blues and golds)
+- **Visual:** Abstract gradient background (style adapts based on design system configuration)
 
 **Notes:**
 - Hero should occupy 80-90vh on desktop, ensuring primary CTA is visible above fold
 - Mobile: Stack vertically, reduce hero height to 60vh
-- Emphasize whitespace for premium feel
+- Emphasize clarity and visual hierarchy
 
 ---
 
@@ -53,7 +53,7 @@
 
 **Visual Style:**
 - Cards with white background, shadow-md
-- Icons use primary brand color (#2B6CB0)
+- Icons use primary brand color (defined in design tokens)
 - 24px padding, 12px border radius
 
 ---
@@ -99,25 +99,27 @@
 ---
 
 ### 4. Design Philosophy Section
-**Purpose:** Establish brand values and approach
+**Purpose:** Establish brand values and approach — emphasize adaptability
 
 **Layout:** Two-column layout on desktop (text left, visual right), stacked on mobile
 
 **Content:**
-- **Heading:** "Premium Aesthetic, Systematically Applied"
+- **Heading:** "Universal Design Intelligence"
 - **Body Text:**
-  - "Flow Studio embodies a premium-medical design philosophy: elegant serif headings paired with modern sans-serif body text, generous whitespace, and restrained color palettes that inspire trust."
-  - "Every design token is validated for accessibility. Every layout decision is documented. Every component follows systematic rules."
-  - "The result? Landing pages that feel handcrafted but scale systematically."
+  - "Flow Studio is a multi-style design engine, not a single aesthetic. Need premium medical? Playful kids' brand? Luxury e-commerce? Minimalist SaaS? The engine adapts."
+  - "Every design system starts with core UX principles: accessibility-first (WCAG AAA for body text, AA for interactive elements), systematic token architecture, semantic HTML, and mobile-first responsiveness."
+  - "From there, the DESIGN-ENGINE.md guides Stylist to generate the appropriate color palettes, typography pairings, spacing scales, and component styles for your specific aesthetic."
+  - "The result? Landing pages that feel handcrafted for your brand, while following universal best practices that scale."
 
 - **Visual (right side):**
-  - Design token visualization (color swatches, type scale, spacing examples)
-  - Or: Screenshot of tokens.json structure
-  - Alternative: Abstract composition showing grid, typography, colors
+  - Multiple design token visualizations showing different aesthetics (e.g., medical blues/golds, playful rounded pastels, luxury black/gold, minimal grays)
+  - Or: Grid showing same layout with 4 different visual treatments
+  - Alternative: Abstract composition demonstrating style flexibility
 
 **Visual Style:**
-- Section uses surface-alt background (#F7FAFC) for contrast
+- Section uses alternate background for contrast
 - Generous padding (48px desktop, 32px mobile)
+- Visual demonstrates adaptability through variety
 
 ---
 
@@ -146,7 +148,7 @@
 
 **Visual Style:**
 - Browser mockup with subtle shadow-lg
-- Annotations use accent color (#B7791F)
+- Annotations use accent color (defined in design tokens)
 - Metrics in a subtle badge/pill format
 
 ---
@@ -192,8 +194,8 @@
 **Layout:** Centered, single column with prominent button
 
 **Content:**
-- **Heading:** "Ready to Create Elegant Designs?"
-- **Subheading:** "Start with a simple prompt. Flow Studio handles the rest."
+- **Heading:** "Ready to Generate Your Design System?"
+- **Subheadline:** "Describe your aesthetic, define your audience. Flow Studio generates the rest — systematically."
 - **Primary CTA:** "Get Started with Flow Studio"
 - **Secondary Option:** "Read the Documentation" (text link below button)
 
