@@ -212,7 +212,8 @@
     "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
     "inner": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
     "focus": "0 0 0 3px rgba(37, 99, 235, 0.2)",
-    "comment": "Subtle shadows - minimal elevation. 'sm' for cards on hover, 'focus' for keyboard navigation (blue outline). Confident minimalism means restrained shadow use."
+    "focus-subtle": "0 0 0 3px rgba(37, 99, 235, 0.1)",
+    "comment": "Subtle shadows - minimal elevation. 'sm' for cards on hover, 'focus' for keyboard navigation (blue outline), 'focus-subtle' for form inputs (lighter focus ring). Confident minimalism means restrained shadow use."
   },
 
   "components": {
@@ -265,7 +266,7 @@
       "focus": {
         "borderColor": "#2563eb",
         "outline": "none",
-        "boxShadow": "0 0 0 3px rgba(37, 99, 235, 0.1)"
+        "boxShadow": "shadow-focus-subtle"
       },
       "error": {
         "borderColor": "#dc2626",
