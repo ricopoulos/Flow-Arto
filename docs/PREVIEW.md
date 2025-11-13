@@ -1,22 +1,22 @@
-# Flow-Arto Preview URLs
+# Flow Studio Preview URLs
 
-This document tracks all live preview URLs for Flow-Arto projects deployed on GitHub Pages.
+This document tracks all live preview URLs for Flow Studio projects deployed on GitHub Pages.
 
-**GitHub Pages Base URL**: https://ricopoulos.github.io/Flow-Arto/
+**GitHub Pages Base URL**: https://ricopoulos.github.io/flow-studio/
 
 ---
 
 ## Current Projects
 
 ### Preview Hub (Main Page)
-- **URL**: https://ricopoulos.github.io/Flow-Arto/
+- **URL**: https://ricopoulos.github.io/flow-studio/
 - **Source**: `/index.html`
 - **Purpose**: Central hub listing all project previews
 - **Status**: Live
 - **Last Updated**: 2025-11-13
 
 ### Carlton Select
-- **URL**: https://ricopoulos.github.io/Flow-Arto/web/carlton-select/
+- **URL**: https://ricopoulos.github.io/flow-studio/web/carlton-select/
 - **Source**: `/web/carlton-select/index.html`
 - **Purpose**: Luxury real estate micro-landing page
 - **Brand**: Luxury Real Estate (navy, gold, champagne)
@@ -24,7 +24,7 @@ This document tracks all live preview URLs for Flow-Arto projects deployed on Gi
 - **Last Updated**: 2025-11-12
 
 ### Flow Studio
-- **URL**: https://ricopoulos.github.io/Flow-Arto/web/flow-studio/
+- **URL**: https://ricopoulos.github.io/flow-studio/web/flow-studio/
 - **Source**: `/web/flow-studio/index.html`
 - **Purpose**: Flow Studio platform landing page (token-driven design system demo)
 - **Brand**: Technical Elegance (slate, blue)
@@ -44,7 +44,7 @@ All site outputs follow this structure:
   └── assets/         (if needed: images, fonts, etc.)
 ```
 
-**Preview URL Pattern**: `https://ricopoulos.github.io/Flow-Arto/web/<project-slug>/`
+**Preview URL Pattern**: `https://ricopoulos.github.io/flow-studio/web/<project-slug>/`
 
 ---
 
