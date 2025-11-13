@@ -1,0 +1,211 @@
+<!--
+Component: hero-basic
+Purpose: Primary hero section for landing pages with centered content
+Category: blocks
+Version: 1.0.0
+
+Slots:
+  - eyebrow: Optional small text above title (brand/category indicator)
+  - title: Main headline (required) - should be page H1
+  - subtitle: Supporting text below title (required)
+  - primaryCTA: Main call-to-action button (required)
+  - secondaryCTA: Secondary action button (optional)
+
+Tokens Used:
+  - color.background
+  - color.text.primary
+  - color.text.secondary
+  - color.accent
+  - type.scale.eyebrow
+  - type.scale.hero
+  - type.scale.lg
+  - type.weight.bold
+  - type.weight.normal
+  - spacing.section.desktop
+  - spacing.section.mobile
+  - spacing.md
+  - spacing.lg
+  - spacing.xl
+
+Behavior:
+  - Centered text on all screen sizes
+  - Max width 720px for optimal readability
+  - Buttons stack vertically on mobile (<640px)
+  - Buttons side-by-side on tablet+ (≥640px)
+  - Section padding adjusts via responsive spacing tokens
+  - Eyebrow uses accent color for brand continuity
+
+Accessibility:
+  - Title uses semantic <h1> element (page title)
+  - Focus states on all interactive elements
+  - Touch targets min 44x44px on mobile
+  - Proper heading hierarchy
+  - Sufficient color contrast (4.5:1 minimum)
+
+Example Usage:
+  See: /examples/hero-basic-example.html
+
+Notes:
+  - Keep title concise (5-10 words ideal)
+  - Subtitle should expand on value prop (15-25 words)
+  - Primary CTA should be action-oriented verb
+  - Consider omitting secondary CTA if message is clear without it
+-->
+
+<section class="hero-basic">
+  <div class="hero-basic__container">
+    <p class="hero-basic__eyebrow">AI Design Agents</p>
+
+    <h1 class="hero-basic__title">
+      Build brand-coherent web experiences
+    </h1>
+
+    <p class="hero-basic__subtitle">
+      Flow Studio understands your brand and generates systematic, polished designs that feel intentional, not generic.
+    </p>
+
+    <div class="hero-basic__actions">
+      <a href="#start" class="btn btn--primary">
+        Start building
+      </a>
+      <a href="#learn" class="btn btn--secondary">
+        Learn how it works
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Hero Basic Container */
+.hero-basic {
+  /* Spacing */
+  padding-top: var(--spacing-section-mobile, 3rem);
+  padding-bottom: var(--spacing-section-mobile, 3rem);
+  padding-left: var(--spacing-md, 1rem);
+  padding-right: var(--spacing-md, 1rem);
+
+  /* Visual */
+  background-color: var(--color-background, #ffffff);
+}
+
+.hero-basic__container {
+  /* Layout */
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  /* Flex for content flow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg, 1.5rem);
+}
+
+/* Eyebrow */
+.hero-basic__eyebrow {
+  /* Typography */
+  font-size: var(--type-scale-eyebrow, 0.875rem);
+  font-weight: var(--type-weight-bold, 600);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  /* Color */
+  color: var(--color-accent, #3b82f6);
+
+  /* Spacing */
+  margin: 0;
+}
+
+/* Title */
+.hero-basic__title {
+  /* Typography */
+  font-size: var(--type-scale-hero-mobile, 2rem);
+  font-weight: var(--type-weight-bold, 700);
+  line-height: 1.2;
+
+  /* Color */
+  color: var(--color-text-primary, #1f2937);
+
+  /* Spacing */
+  margin: 0;
+}
+
+/* Subtitle */
+.hero-basic__subtitle {
+  /* Typography */
+  font-size: var(--type-scale-lg, 1.125rem);
+  font-weight: var(--type-weight-normal, 400);
+  line-height: 1.6;
+
+  /* Color */
+  color: var(--color-text-secondary, #6b7280);
+
+  /* Spacing */
+  margin: 0;
+  max-width: 600px;
+}
+
+/* Actions */
+.hero-basic__actions {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md, 1rem);
+  width: 100%;
+  max-width: 400px;
+
+  /* Spacing */
+  margin-top: var(--spacing-md, 1rem);
+}
+
+.hero-basic__actions .btn {
+  width: 100%;
+}
+
+/* Tablet and up (≥640px) */
+@media (min-width: 640px) {
+  .hero-basic {
+    padding-top: var(--spacing-section-tablet, 4rem);
+    padding-bottom: var(--spacing-section-tablet, 4rem);
+  }
+
+  .hero-basic__title {
+    font-size: var(--type-scale-hero-tablet, 2.5rem);
+  }
+
+  .hero-basic__actions {
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    max-width: none;
+  }
+
+  .hero-basic__actions .btn {
+    width: auto;
+  }
+}
+
+/* Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  .hero-basic {
+    padding-top: var(--spacing-section-desktop, 6rem);
+    padding-bottom: var(--spacing-section-desktop, 6rem);
+  }
+
+  .hero-basic__title {
+    font-size: var(--type-scale-hero, 3rem);
+  }
+
+  .hero-basic__container {
+    gap: var(--spacing-xl, 2rem);
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .hero-basic__eyebrow {
+    font-weight: var(--type-weight-bold, 700);
+  }
+}
+</style>

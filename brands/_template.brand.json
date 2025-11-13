@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "description": "Universal brand definition template for Flow Studio. Copy this file and fill in your brand details.",
+  "meta": {
+    "name": "[Brand Name]",
+    "sector": "[Industry / Market Sector]",
+    "domain": "[primary-domain.com]",
+    "maturity": "[startup | growth | established | enterprise]",
+    "version": "1.0.0",
+    "lastUpdated": "[YYYY-MM-DD]"
+  },
+  "voice": {
+    "tone": [
+      "[adjective describing tone]",
+      "[adjective describing tone]",
+      "[adjective describing tone]"
+    ],
+    "style": [
+      "[writing style guideline]",
+      "[writing style guideline]",
+      "[writing style guideline]"
+    ],
+    "phrasesToAvoid": [
+      "[phrase or pattern to never use]",
+      "[phrase or pattern to never use]"
+    ],
+    "phrasesToEmphasize": [
+      "[key brand term or concept]",
+      "[key brand term or concept]"
+    ],
+    "examples": {
+      "goodHeadline": "[Example of on-brand headline]",
+      "badHeadline": "[Example of off-brand headline]",
+      "goodCTA": "[Example of on-brand CTA]",
+      "badCTA": "[Example of off-brand CTA]"
+    }
+  },
+  "audience": {
+    "primary": "[Primary target audience description]",
+    "secondary": "[Secondary target audience description]",
+    "tertiary": "[Tertiary target audience description (optional)]",
+    "painPoints": [
+      "[Key problem this audience faces]",
+      "[Key problem this audience faces]",
+      "[Key problem this audience faces]"
+    ],
+    "desiredOutcomes": [
+      "[What they want to achieve]",
+      "[What they want to achieve]",
+      "[What they want to achieve]"
+    ],
+    "psychographics": {
+      "values": ["[core value]", "[core value]"],
+      "fears": ["[key fear or concern]", "[key fear or concern]"],
+      "aspirations": ["[key aspiration]", "[key aspiration]"]
+    }
+  },
+  "emotions": {
+    "shouldFeel": [
+      "[desired emotional response]",
+      "[desired emotional response]",
+      "[desired emotional response]"
+    ],
+    "shouldNotFeel": [
+      "[emotion to avoid triggering]",
+      "[emotion to avoid triggering]",
+      "[emotion to avoid triggering]"
+    ],
+    "emotionalJourney": {
+      "arrival": "[how they should feel when they first see the site]",
+      "engagement": "[how they should feel while reading/exploring]",
+      "conversion": "[how they should feel when taking action]"
+    }
+  },
+  "visual": {
+    "density": "[minimal | calm-light | calm-medium | medium | rich | dense]",
+    "mood": [
+      "[visual mood descriptor]",
+      "[visual mood descriptor]",
+      "[visual mood descriptor]"
+    ],
+    "imagery": [
+      "[type of image that fits brand]",
+      "[type of image that fits brand]",
+      "[type of image that fits brand]"
+    ],
+    "avoidImagery": [
+      "[type of image that doesn't fit brand]",
+      "[type of image that doesn't fit brand]"
+    ],
+    "colorTemperature": "[warm | neutral | cool | mixed]",
+    "contrast": "[low | medium | high]",
+    "sophistication": "[playful | balanced | serious | premium]",
+    "motion": {
+      "tolerance": "[none | subtle | moderate | energetic]",
+      "style": "[smooth-fade | snappy | bouncy | minimal]"
+    }
+  },
+  "constraints": {
+    "mustAvoid": [
+      "[Specific design pattern or style to never use]",
+      "[Specific design pattern or style to never use]",
+      "[Specific design pattern or style to never use]"
+    ],
+    "mustRespect": [
+      "[Requirement that must always be followed]",
+      "[Requirement that must always be followed]"
+    ],
+    "accessibility": {
+      "minimumStandard": "WCAG AA",
+      "targetStandard": "WCAG AAA (where feasible)",
+      "specificRequirements": [
+        "[Any specific accessibility needs]"
+      ]
+    },
+    "legal": {
+      "requiresDisclaimer": false,
+      "disclaimerText": "[If required, the exact disclaimer text]",
+      "regulatoryContext": "[Any regulatory requirements affecting design]"
+    }
+  },
+  "examples": {
+    "referenceWebsites": [
+      {
+        "url": "https://example.com",
+        "why": "[What aspect of this site to emulate]",
+        "whatToTake": "[Specific element: tone/layout/motion/etc]",
+        "whatToAvoid": "[What NOT to copy from this reference]"
+      }
+    ],
+    "moodboards": [
+      {
+        "url": "[URL to moodboard or Pinterest board]",
+        "description": "[What this moodboard represents]"
+      }
+    ],
+    "notes": "[General notes about references and inspiration]"
+  },
+  "extensions": {
+    "seo": {
+      "tagline": "[Primary tagline for meta descriptions]",
+      "keywordThemes": [
+        "[keyword theme]",
+        "[keyword theme]"
+      ],
+      "metaDescriptionTemplate": "[Template for meta descriptions]"
+    },
+    "localization": {
+      "primaryLanguage": "en-US",
+      "supportedLocales": ["en-US"],
+      "culturalNotes": "[Any cultural considerations for design]"
+    },
+    "customFields": {
+      "_comment": "Add any brand-specific fields here as needed"
+    }
+  }
+}

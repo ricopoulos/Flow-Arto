@@ -1,0 +1,149 @@
+<!--
+Component: section-wrapper
+Purpose: Semantic section container with consistent spacing and max-width
+Category: layout
+Version: 1.0.0
+
+Variants:
+  - default: Standard content width (1280px)
+  - narrow: Narrow content (720px) - good for text-heavy sections
+  - wide: Wide content (1440px) - good for visual sections
+  - full: Full width - no max-width constraint
+
+Slots:
+  - content: Section content (required)
+
+Tokens Used:
+  - spacing.section.desktop
+  - spacing.section.tablet
+  - spacing.section.mobile
+  - spacing.md
+  - color.background (optional, for alternate backgrounds)
+
+Behavior:
+  - Responsive padding based on viewport size
+  - Centered content with max-width
+  - Horizontal padding to prevent edge-to-edge content
+  - Optional background color via modifier class
+
+Accessibility:
+  - Uses semantic <section> element
+  - Should include heading for screen reader navigation
+  - Optional aria-labelledby for section identification
+
+Example Usage:
+  <section class="section-wrapper">
+    <h2>Section Title</h2>
+    <p>Section content...</p>
+  </section>
+
+  <section class="section-wrapper section-wrapper--narrow">
+    <h2>Narrow Section</h2>
+    <p>Text-heavy content...</p>
+  </section>
+
+Notes:
+  - Combine with other components for complete layouts
+  - Add semantic headings for proper document structure
+  - Use background color sparingly for visual hierarchy
+-->
+
+<section class="section-wrapper">
+  <div class="section-wrapper__container">
+    <!-- Section content goes here -->
+    <slot></slot>
+  </div>
+</section>
+
+<style>
+/* Section Wrapper */
+.section-wrapper {
+  /* Spacing */
+  padding-top: var(--spacing-section-mobile, 3rem);
+  padding-bottom: var(--spacing-section-mobile, 3rem);
+  padding-left: var(--spacing-md, 1rem);
+  padding-right: var(--spacing-md, 1rem);
+
+  /* Visual */
+  width: 100%;
+}
+
+.section-wrapper__container {
+  /* Layout */
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Narrow Variant - 720px max */
+.section-wrapper--narrow .section-wrapper__container {
+  max-width: 720px;
+}
+
+/* Wide Variant - 1440px max */
+.section-wrapper--wide .section-wrapper__container {
+  max-width: 1440px;
+}
+
+/* Full Variant - No max-width */
+.section-wrapper--full .section-wrapper__container {
+  max-width: none;
+}
+
+/* Background Variants */
+.section-wrapper--bg-surface {
+  background-color: var(--color-surface, #f3f4f6);
+}
+
+.section-wrapper--bg-accent {
+  background-color: var(--color-accent-subtle, rgba(59, 130, 246, 0.05));
+}
+
+/* Spacing Variants */
+.section-wrapper--tight {
+  padding-top: var(--spacing-lg, 1.5rem);
+  padding-bottom: var(--spacing-lg, 1.5rem);
+}
+
+.section-wrapper--loose {
+  padding-top: calc(var(--spacing-section-mobile, 3rem) * 1.5);
+  padding-bottom: calc(var(--spacing-section-mobile, 3rem) * 1.5);
+}
+
+/* Tablet and up (≥640px) */
+@media (min-width: 640px) {
+  .section-wrapper {
+    padding-top: var(--spacing-section-tablet, 4rem);
+    padding-bottom: var(--spacing-section-tablet, 4rem);
+  }
+
+  .section-wrapper--tight {
+    padding-top: var(--spacing-xl, 2rem);
+    padding-bottom: var(--spacing-xl, 2rem);
+  }
+
+  .section-wrapper--loose {
+    padding-top: calc(var(--spacing-section-tablet, 4rem) * 1.5);
+    padding-bottom: calc(var(--spacing-section-tablet, 4rem) * 1.5);
+  }
+}
+
+/* Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  .section-wrapper {
+    padding-top: var(--spacing-section-desktop, 6rem);
+    padding-bottom: var(--spacing-section-desktop, 6rem);
+  }
+
+  .section-wrapper--tight {
+    padding-top: calc(var(--spacing-xl, 2rem) * 1.5);
+    padding-bottom: calc(var(--spacing-xl, 2rem) * 1.5);
+  }
+
+  .section-wrapper--loose {
+    padding-top: calc(var(--spacing-section-desktop, 6rem) * 1.5);
+    padding-bottom: calc(var(--spacing-section-desktop, 6rem) * 1.5);
+  }
+}
+</style>

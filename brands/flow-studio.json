@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "name": "Flow Studio",
+    "sector": "AI-Powered Design Tools / Web Development",
+    "domain": "flow-studio.io",
+    "maturity": "growth",
+    "version": "1.0.0",
+    "lastUpdated": "2025-11-13"
+  },
+  "voice": {
+    "tone": [
+      "intelligent",
+      "capable",
+      "approachable",
+      "precise"
+    ],
+    "style": [
+      "Clear, technical but not jargon-heavy",
+      "Active voice, declarative statements",
+      "Concise explanations that respect reader intelligence",
+      "Professional without being corporate"
+    ],
+    "phrasesToAvoid": [
+      "magic",
+      "revolutionary",
+      "game-changer",
+      "disrupt",
+      "next-generation",
+      "cutting-edge"
+    ],
+    "phrasesToEmphasize": [
+      "precise",
+      "systematic",
+      "intentional",
+      "structured",
+      "composable",
+      "coherent",
+      "brand-aware"
+    ],
+    "examples": {
+      "goodHeadline": "Build brand-coherent web experiences with AI that understands design systems",
+      "badHeadline": "Revolutionary AI Magic That Will Transform Your Web Design Forever!",
+      "goodCTA": "Start building",
+      "badCTA": "Try the magic now!"
+    }
+  },
+  "audience": {
+    "primary": "Design-conscious developers and technical product builders",
+    "secondary": "Design teams at startups and growth companies",
+    "tertiary": "Agencies building multiple brand experiences",
+    "painPoints": [
+      "Generic AI tools that ignore brand consistency",
+      "Too much manual polish needed after AI generation",
+      "Difficulty maintaining design systems across projects",
+      "Time wasted translating feedback into implementation",
+      "Disconnect between design vision and coded reality"
+    ],
+    "desiredOutcomes": [
+      "Ship brand-coherent pages faster",
+      "Maintain consistency across multiple projects",
+      "Reduce revision cycles",
+      "Scale design quality without scaling team size",
+      "Bridge gap between design intent and implementation"
+    ],
+    "psychographics": {
+      "values": [
+        "Craft and attention to detail",
+        "Systematic thinking",
+        "Efficiency without sacrificing quality",
+        "Tools that augment rather than replace skill"
+      ],
+      "fears": [
+        "AI-generated design that looks obviously AI-made",
+        "Losing creative control",
+        "Lock-in to opaque systems",
+        "Generic, templated output"
+      ],
+      "aspirations": [
+        "Build better products faster",
+        "Elevate design quality",
+        "Work at a higher level of abstraction",
+        "Focus on strategy rather than pixel-pushing"
+      ]
+    }
+  },
+  "emotions": {
+    "shouldFeel": [
+      "confidence",
+      "clarity",
+      "capability",
+      "creative leverage",
+      "in control"
+    ],
+    "shouldNotFeel": [
+      "hype",
+      "confusion",
+      "overwhelmed",
+      "skeptical about quality",
+      "worried about losing control"
+    ],
+    "emotionalJourney": {
+      "arrival": "Intrigued - this feels different from typical AI tools",
+      "engagement": "Understanding - this is systematic, not magical",
+      "conversion": "Confident - ready to see what I can build with this"
+    }
+  },
+  "visual": {
+    "density": "calm-medium",
+    "mood": [
+      "intelligent",
+      "precise",
+      "modern but not trendy",
+      "technical elegance",
+      "confident minimalism"
+    ],
+    "imagery": [
+      "UI screenshots showing real design systems",
+      "Before/after comparisons of design coherence",
+      "Architectural diagrams of how the system works",
+      "Clean code examples",
+      "Brand token visualizations"
+    ],
+    "avoidImagery": [
+      "Generic stock photos of people",
+      "Abstract AI visualizations (neural networks, fractals)",
+      "Overly futuristic or sci-fi aesthetics",
+      "Chaotic 'creative' layouts"
+    ],
+    "colorTemperature": "cool-neutral",
+    "contrast": "medium-high",
+    "sophistication": "premium",
+    "motion": {
+      "tolerance": "subtle",
+      "style": "smooth-fade"
+    }
+  },
+  "constraints": {
+    "mustAvoid": [
+      "Gradient-heavy designs that feel consumer-app-like",
+      "Overly playful or whimsical elements",
+      "Buzzword-heavy copy",
+      "Hiding technical details behind marketing speak",
+      "Cluttered layouts that undermine message of 'systematic design'"
+    ],
+    "mustRespect": [
+      "WCAG AA minimum for all pages",
+      "Clean, semantic HTML that demonstrates our own values",
+      "Fast page loads (design tools should be performant)",
+      "Clarity over cleverness in all communication"
+    ],
+    "accessibility": {
+      "minimumStandard": "WCAG AA",
+      "targetStandard": "WCAG AAA (where feasible)",
+      "specificRequirements": [
+        "All interactive elements must have clear focus states",
+        "Color must never be the only indicator of meaning",
+        "All animations must respect prefers-reduced-motion"
+      ]
+    },
+    "legal": {
+      "requiresDisclaimer": false,
+      "disclaimerText": "",
+      "regulatoryContext": "None currently, but maintain data privacy transparency"
+    }
+  },
+  "examples": {
+    "referenceWebsites": [
+      {
+        "url": "https://linear.app",
+        "why": "Precision and clarity in communicating a technical product",
+        "whatToTake": "Clean hierarchy, confident minimalism, respect for user intelligence",
+        "whatToAvoid": "Don't copy their specific visual style - take the *approach*"
+      },
+      {
+        "url": "https://supabase.com",
+        "why": "Developer-focused but approachable, technical without being dry",
+        "whatToTake": "Tone of voice, balance of detail and clarity",
+        "whatToAvoid": "Their specific color palette and illustration style"
+      },
+      {
+        "url": "https://vercel.com",
+        "why": "Premium developer tools aesthetic",
+        "whatToTake": "Sophistication level, information density",
+        "whatToAvoid": "Overly minimal - we need to explain more than they do"
+      }
+    ],
+    "moodboards": [],
+    "notes": "References are for TONE and APPROACH, not visual copying. Flow Studio should have its own distinct visual identity."
+  },
+  "extensions": {
+    "seo": {
+      "tagline": "AI design agents that understand your brand",
+      "keywordThemes": [
+        "AI design system",
+        "brand-aware web design",
+        "systematic design tools",
+        "design token automation",
+        "composable web components"
+      ],
+      "metaDescriptionTemplate": "Flow Studio: Build brand-coherent web experiences with AI agents that understand design systems, tokens, and your unique brand voice."
+    },
+    "localization": {
+      "primaryLanguage": "en-US",
+      "supportedLocales": ["en-US"],
+      "culturalNotes": "Primary audience is global but English-speaking developer/designer community"
+    },
+    "customFields": {
+      "productPhilosophy": "Augment human design intelligence rather than replace it. Systematic rather than magical. Transparent rather than opaque. Brand-aware rather than generic.",
+      "technicalTransparency": "Show how the system works. Don't hide behind 'AI magic' - explain the agent architecture, token system, brand engine."
+    }
+  }
+}
