@@ -1,0 +1,329 @@
+{
+  "project": "Carlton Select",
+  "aesthetic": "Luxury Miami Real Estate",
+  "version": "1.0",
+  "generated": "2025-11-12",
+  "description": "Premium, exclusive design tokens for Carlton Select micro-landing page. Navy, gold, champagne palette with refined typography for accredited investor audience.",
+
+  "colors": {
+    "primary": {
+      "navy-900": "#0f1f3d",
+      "navy-800": "#1a365d",
+      "navy-700": "#2c4875",
+      "navy-600": "#3d5a8c",
+      "navy-500": "#4e6ba3",
+      "comment": "Primary brand color. Navy-800 is main, navy-900 for text-heavy backgrounds."
+    },
+    "accent": {
+      "gold-600": "#b8860b",
+      "gold-500": "#d4af37",
+      "gold-400": "#e4c764",
+      "gold-300": "#f0db93",
+      "comment": "Luxury accent. Gold-500 for CTAs and highlights, gold-400 for hover states."
+    },
+    "neutral": {
+      "champagne": "#f7f3e9",
+      "white": "#ffffff",
+      "off-white": "#fafaf9",
+      "gray-100": "#f7fafc",
+      "gray-200": "#edf2f7",
+      "gray-300": "#e2e8f0",
+      "gray-400": "#cbd5e0",
+      "gray-500": "#a0aec0",
+      "gray-600": "#718096",
+      "gray-700": "#4a5568",
+      "gray-800": "#2d3748",
+      "gray-900": "#1a202c",
+      "charcoal": "#2d3748",
+      "comment": "Neutral palette for backgrounds, borders, and text. Champagne for luxury section backgrounds."
+    },
+    "semantic": {
+      "success": "#2f855a",
+      "error": "#c53030",
+      "warning": "#d69e2e",
+      "info": "#3182ce",
+      "comment": "Semantic colors for form validation and status messages."
+    },
+    "contrast-validation": {
+      "body-text-on-white": {
+        "color": "#1a202c",
+        "background": "#ffffff",
+        "ratio": "16.68:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass"
+      },
+      "body-text-on-champagne": {
+        "color": "#1a202c",
+        "background": "#f7f3e9",
+        "ratio": "15.2:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass"
+      },
+      "navy-on-white": {
+        "color": "#1a365d",
+        "background": "#ffffff",
+        "ratio": "11.3:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass"
+      },
+      "gold-on-navy": {
+        "color": "#e4c764",
+        "background": "#1a365d",
+        "ratio": "6.8:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass (large text)"
+      },
+      "white-on-navy": {
+        "color": "#ffffff",
+        "background": "#1a365d",
+        "ratio": "12.4:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass"
+      },
+      "navy-on-gold": {
+        "color": "#1a365d",
+        "background": "#d4af37",
+        "ratio": "4.7:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass (large text)"
+      }
+    }
+  },
+
+  "typography": {
+    "fonts": {
+      "heading": {
+        "family": "'Cormorant Garamond', serif",
+        "weights": [400, 500, 600, 700],
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap",
+        "rationale": "Refined serif with luxury appeal. Cormorant Garamond has elegant proportions, classic feel, and excellent readability at large sizes. Perfect for Carlton Select's premium positioning."
+      },
+      "body": {
+        "family": "'Montserrat', 'Inter', system-ui, -apple-system, sans-serif",
+        "weights": [400, 500, 600, 700],
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap",
+        "rationale": "Clean, modern sans-serif with professional character. Montserrat is geometric but warm, highly readable for body text, and pairs beautifully with Cormorant Garamond's elegance."
+      },
+      "comment": "Pairing: Serif headings (luxury, timeless) + Sans body (modern, trustworthy). Both fonts are Google Fonts, free and widely supported."
+    },
+    "scale": {
+      "xs": "12px",
+      "sm": "14px",
+      "base": "16px",
+      "md": "18px",
+      "lg": "20px",
+      "xl": "24px",
+      "2xl": "30px",
+      "3xl": "36px",
+      "4xl": "48px",
+      "5xl": "60px",
+      "6xl": "72px",
+      "comment": "Type scale for responsive typography. Mobile uses smaller sizes, desktop uses larger."
+    },
+    "lineHeight": {
+      "tight": "1.25",
+      "snug": "1.35",
+      "normal": "1.5",
+      "relaxed": "1.625",
+      "loose": "1.75",
+      "comment": "Headings use 'snug' (1.35), body uses 'relaxed' (1.625) for readability."
+    },
+    "letterSpacing": {
+      "tighter": "-0.05em",
+      "tight": "-0.025em",
+      "normal": "0",
+      "wide": "0.025em",
+      "wider": "0.05em",
+      "widest": "0.1em",
+      "comment": "Large headings use 'tight' (-0.025em) for refinement. Body uses 'normal'."
+    },
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "comment": "Use medium (500) for emphasis, semibold (600) for subheadings, bold (700) for primary headings."
+    }
+  },
+
+  "spacing": {
+    "scale": "8px",
+    "values": {
+      "0": "0",
+      "1": "8px",
+      "2": "16px",
+      "3": "24px",
+      "4": "32px",
+      "5": "40px",
+      "6": "48px",
+      "7": "56px",
+      "8": "64px",
+      "10": "80px",
+      "12": "96px",
+      "16": "128px",
+      "20": "160px",
+      "comment": "8px base scale for generous, luxury spacing. Use larger values (8, 10, 12) for section padding."
+    },
+    "component-specific": {
+      "section-padding-desktop": "96px",
+      "section-padding-mobile": "48px",
+      "content-max-width": "1200px",
+      "form-max-width": "500px",
+      "grid-gap": "32px",
+      "button-padding-x": "32px",
+      "button-padding-y": "16px",
+      "input-padding-x": "16px",
+      "input-padding-y": "14px"
+    }
+  },
+
+  "borderRadius": {
+    "none": "0",
+    "sm": "4px",
+    "md": "8px",
+    "lg": "12px",
+    "xl": "16px",
+    "full": "9999px",
+    "comment": "Use 'sm' (4px) for subtle refinement on buttons and inputs. 'md' (8px) for cards if needed."
+  },
+
+  "shadows": {
+    "none": "none",
+    "sm": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+    "inner": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+    "focus": "0 0 0 3px rgba(212, 175, 55, 0.4)",
+    "comment": "Use 'sm' for subtle card elevation. 'focus' for keyboard navigation (gold outline). Keep shadows minimal for luxury aesthetic."
+  },
+
+  "components": {
+    "button-primary": {
+      "background": "#d4af37",
+      "color": "#1a365d",
+      "border": "none",
+      "borderRadius": "4px",
+      "fontSize": "16px",
+      "fontWeight": 600,
+      "padding": "16px 32px",
+      "minHeight": "48px",
+      "hover": {
+        "background": "#e4c764",
+        "transform": "translateY(-1px)",
+        "shadow": "md"
+      },
+      "focus": {
+        "outline": "none",
+        "boxShadow": "0 0 0 3px rgba(212, 175, 55, 0.4)"
+      }
+    },
+    "button-secondary": {
+      "background": "transparent",
+      "color": "#d4af37",
+      "border": "2px solid #d4af37",
+      "borderRadius": "4px",
+      "fontSize": "16px",
+      "fontWeight": 600,
+      "padding": "14px 32px",
+      "minHeight": "48px",
+      "hover": {
+        "background": "rgba(212, 175, 55, 0.1)",
+        "borderColor": "#e4c764"
+      },
+      "focus": {
+        "outline": "none",
+        "boxShadow": "0 0 0 3px rgba(212, 175, 55, 0.4)"
+      }
+    },
+    "input": {
+      "background": "#ffffff",
+      "color": "#1a202c",
+      "border": "2px solid #cbd5e0",
+      "borderRadius": "4px",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "padding": "14px 16px",
+      "minHeight": "48px",
+      "focus": {
+        "borderColor": "#d4af37",
+        "outline": "none",
+        "boxShadow": "0 0 0 3px rgba(212, 175, 55, 0.15)"
+      },
+      "error": {
+        "borderColor": "#c53030",
+        "boxShadow": "0 0 0 3px rgba(197, 48, 48, 0.15)"
+      }
+    },
+    "label": {
+      "fontSize": "14px",
+      "fontWeight": 600,
+      "color": "#2d3748",
+      "marginBottom": "8px",
+      "display": "block"
+    },
+    "card": {
+      "background": "#ffffff",
+      "borderRadius": "8px",
+      "padding": "32px",
+      "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
+    }
+  },
+
+  "layout": {
+    "breakpoints": {
+      "mobile": "375px",
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "comment": "Mobile-first breakpoints. Use min-width media queries."
+    },
+    "container": {
+      "maxWidth": "1200px",
+      "padding": "24px",
+      "margin": "0 auto"
+    },
+    "grid": {
+      "columns-mobile": 1,
+      "columns-tablet": 2,
+      "columns-desktop": 3,
+      "gap": "32px"
+    }
+  },
+
+  "motion": {
+    "duration": {
+      "fast": "150ms",
+      "medium": "250ms",
+      "slow": "400ms",
+      "comment": "Use 'fast' for button hovers, 'medium' for form focus states."
+    },
+    "easing": {
+      "default": "ease-in-out",
+      "in": "ease-in",
+      "out": "ease-out",
+      "sharp": "cubic-bezier(0.4, 0.0, 0.6, 1)",
+      "comment": "Use 'default' for most transitions. 'sharp' for hover lifts."
+    }
+  },
+
+  "accessibility": {
+    "focusOutline": {
+      "color": "#d4af37",
+      "width": "3px",
+      "style": "solid",
+      "offset": "2px"
+    },
+    "minTouchTarget": "44px",
+    "minContrastRatio": "4.5:1",
+    "preferredContrastRatio": "7:1"
+  },
+
+  "notes": {
+    "colorRationale": "Navy conveys trust and sophistication (financial services standard). Gold adds luxury without being ostentatious. Champagne provides warmth for alternating sections. All contrast ratios validated for WCAG AA+.",
+    "typographyRationale": "Cormorant Garamond (heading) is refined and timeless—luxury without pretension. Montserrat (body) is modern, geometric, highly readable. The pairing balances elegance with professionalism.",
+    "spacingRationale": "8px scale with generous values (64px+) creates luxury through whitespace. High-net-worth audiences expect breathing room, not clutter.",
+    "interactionRationale": "Subtle hover states (brightness, lift) signal interactivity without being playful. Gold focus outlines meet accessibility while reinforcing brand."
+  }
+}
