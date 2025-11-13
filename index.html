@@ -3,315 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Flow Studio - Multi-agent design intelligence system for creating exceptional, accessible web experiences through natural language workflows.">
-  <title>Flow Studio - Multi-Agent Design Intelligence</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Flow-Arto Preview Hub</title>
   <style>
-    :root {
-      --color-primary: #2563eb;
-      --color-primary-dark: #1e40af;
-      --color-secondary: #7c3aed;
-      --color-gray-50: #f9fafb;
-      --color-gray-100: #f3f4f6;
-      --color-gray-200: #e5e7eb;
-      --color-gray-300: #d1d5db;
-      --color-gray-600: #4b5563;
-      --color-gray-700: #374151;
-      --color-gray-800: #1f2937;
-      --color-gray-900: #111827;
-      --color-white: #ffffff;
-      --color-success: #10b981;
-      --color-luxury: #d4af37;
-
-      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      font-family: var(--font-sans);
-      font-size: 16px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       line-height: 1.6;
-      color: var(--color-gray-800);
-      background-color: var(--color-white);
+      color: #1f2937;
+      background: #f9fafb;
+      padding: 40px 20px;
     }
 
     .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* Header */
-    header {
-      background: var(--color-white);
-      border-bottom: 1px solid var(--color-gray-200);
-      padding: 24px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      backdrop-filter: blur(8px);
-      background: rgba(255, 255, 255, 0.95);
-    }
-
-    .header-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: 700;
-      color: var(--color-gray-900);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .logo-icon {
-      width: 32px;
-      height: 32px;
-      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: 700;
-      font-size: 18px;
-    }
-
-    nav a {
-      color: var(--color-gray-700);
-      text-decoration: none;
-      margin-left: 32px;
-      font-weight: 500;
-      font-size: 14px;
-      transition: color 0.15s;
-    }
-
-    nav a:hover {
-      color: var(--color-primary);
-    }
-
-    /* Hero */
-    .hero {
-      background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-white) 100%);
-      padding: 80px 0;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      font-weight: 700;
-      color: var(--color-gray-900);
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    .hero .subtitle {
-      font-size: 20px;
-      color: var(--color-gray-600);
-      margin-bottom: 32px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .hero .description {
-      font-size: 16px;
-      color: var(--color-gray-700);
       max-width: 800px;
-      margin: 0 auto 40px;
-      line-height: 1.7;
+      margin: 0 auto;
     }
 
-    .badge {
-      display: inline-block;
-      background: var(--color-primary);
-      color: white;
-      padding: 6px 12px;
-      border-radius: 9999px;
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 24px;
-    }
-
-    /* Agents Section */
-    .agents {
-      padding: 80px 0;
-      background: var(--color-white);
-    }
-
-    .section-title {
-      font-size: 36px;
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 16px;
-      color: var(--color-gray-900);
-    }
-
-    .section-subtitle {
-      text-align: center;
-      font-size: 18px;
-      color: var(--color-gray-600);
-      margin-bottom: 64px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .agents-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 24px;
+    header {
       margin-bottom: 48px;
     }
 
-    @media (min-width: 768px) {
-      .agents-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .agents-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-
-    .agent-card {
-      background: var(--color-white);
-      border: 1px solid var(--color-gray-200);
-      border-radius: 12px;
-      padding: 24px;
-      transition: all 0.2s;
-    }
-
-    .agent-card:hover {
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-2px);
-      border-color: var(--color-primary);
-    }
-
-    .agent-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-      font-size: 24px;
-    }
-
-    .agent-card h3 {
-      font-size: 18px;
-      font-weight: 600;
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #111827;
       margin-bottom: 8px;
-      color: var(--color-gray-900);
     }
 
-    .agent-card .role {
-      font-size: 14px;
-      color: var(--color-gray-600);
-      margin-bottom: 12px;
-      font-style: italic;
+    .subtitle {
+      font-size: 16px;
+      color: #6b7280;
     }
 
-    .agent-card p {
-      font-size: 14px;
-      color: var(--color-gray-700);
-      line-height: 1.6;
-    }
-
-    /* Projects Section */
     .projects {
-      padding: 80px 0;
-      background: var(--color-gray-50);
+      display: grid;
+      gap: 24px;
     }
 
     .project-card {
-      background: var(--color-white);
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: var(--shadow-md);
-      transition: all 0.2s;
-      border: 1px solid var(--color-gray-200);
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 24px;
+      transition: box-shadow 0.2s ease, border-color 0.2s ease;
     }
 
     .project-card:hover {
-      box-shadow: var(--shadow-lg);
-      transform: translateY(-4px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      border-color: #d1d5db;
     }
 
-    .project-preview {
-      height: 300px;
-      background: linear-gradient(135deg, #f7f3e9 0%, #fafaf9 100%);
+    .project-header {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      border-bottom: 1px solid var(--color-gray-200);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .project-preview-content {
-      text-align: center;
-      padding: 40px;
-    }
-
-    .project-preview h4 {
-      font-family: 'Georgia', serif;
-      font-size: 32px;
-      color: #1a365d;
-      margin-bottom: 8px;
-    }
-
-    .project-preview .tagline {
-      font-size: 16px;
-      color: #4a5568;
-      margin-bottom: 16px;
-    }
-
-    .project-badge {
-      display: inline-block;
-      background: var(--color-luxury);
-      color: #1a365d;
-      padding: 6px 16px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .project-content {
-      padding: 32px;
-    }
-
-    .project-content h3 {
-      font-size: 24px;
-      font-weight: 600;
+      justify-content: space-between;
+      align-items: flex-start;
       margin-bottom: 12px;
-      color: var(--color-gray-900);
+    }
+
+    .project-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 4px;
+    }
+
+    .project-status {
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+
+    .status-dev {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+
+    .status-testing {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .project-description {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 16px;
+      line-height: 1.5;
     }
 
     .project-meta {
       display: flex;
       gap: 16px;
+      font-size: 13px;
+      color: #9ca3af;
       margin-bottom: 16px;
-      font-size: 14px;
-      color: var(--color-gray-600);
     }
 
     .project-meta span {
@@ -320,338 +112,166 @@
       gap: 4px;
     }
 
-    .project-content p {
-      margin-bottom: 24px;
-      color: var(--color-gray-700);
-      line-height: 1.7;
-    }
-
-    .project-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-bottom: 24px;
-      padding: 16px;
-      background: var(--color-gray-50);
-      border-radius: 8px;
-    }
-
-    .stat {
-      text-align: center;
-    }
-
-    .stat-value {
-      font-size: 24px;
-      font-weight: 700;
-      color: var(--color-gray-900);
-      display: block;
-    }
-
-    .stat-label {
-      font-size: 12px;
-      color: var(--color-gray-600);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.15s;
-      font-size: 14px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .button-primary {
-      background: var(--color-primary);
-      color: white;
-    }
-
-    .button-primary:hover {
-      background: var(--color-primary-dark);
-      transform: translateY(-1px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .button-secondary {
-      background: transparent;
-      color: var(--color-primary);
-      border: 2px solid var(--color-primary);
-    }
-
-    .button-secondary:hover {
-      background: var(--color-primary);
-      color: white;
-    }
-
-    .button-group {
+    .project-links {
       display: flex;
       gap: 12px;
-      flex-wrap: wrap;
     }
 
-    /* Footer */
-    footer {
-      background: var(--color-gray-900);
-      color: var(--color-gray-300);
-      padding: 48px 0 24px;
-      text-align: center;
-    }
-
-    footer p {
-      margin-bottom: 16px;
-    }
-
-    footer a {
-      color: var(--color-gray-300);
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 500;
       text-decoration: none;
-      margin: 0 12px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
     }
 
-    footer a:hover {
+    .btn-primary {
+      background: #2563eb;
       color: white;
     }
 
-    .workflow-diagram {
-      background: var(--color-white);
-      border: 2px solid var(--color-gray-200);
-      border-radius: 12px;
-      padding: 32px;
-      margin: 48px 0;
+    .btn-primary:hover {
+      background: #1d4ed8;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #374151;
+      border: 1px solid #d1d5db;
+    }
+
+    .btn-secondary:hover {
+      background: #f9fafb;
+      border-color: #9ca3af;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
       text-align: center;
-    }
-
-    .workflow-steps {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .workflow-step {
-      flex: 1;
-      min-width: 150px;
-      padding: 16px;
-      background: var(--color-gray-50);
-      border-radius: 8px;
-      border: 1px solid var(--color-gray-200);
-    }
-
-    .workflow-step strong {
-      display: block;
-      color: var(--color-primary);
       font-size: 14px;
-      margin-bottom: 4px;
+      color: #9ca3af;
     }
 
-    .workflow-arrow {
-      color: var(--color-gray-400);
-      font-size: 24px;
+    .info-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 32px;
+      font-size: 14px;
+      color: #1e40af;
     }
 
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 36px; }
-      .section-title { font-size: 28px; }
-      .workflow-arrow { display: none; }
-      nav { display: none; }
+    .info-box strong {
+      font-weight: 600;
+    }
+
+    @media (max-width: 640px) {
+      .project-header {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .project-links {
+        flex-direction: column;
+      }
+
+      .btn {
+        text-align: center;
+        justify-content: center;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <h1>Flow-Arto Preview Hub</h1>
+      <p class="subtitle">Development previews for ongoing projects</p>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="header-content">
-        <a href="/" class="logo">
-          <div class="logo-icon">F</div>
-          <span>Flow Studio</span>
-        </a>
-        <nav>
-          <a href="#agents">Agents</a>
-          <a href="#projects">Projects</a>
-          <a href="docs/DESIGN-ENGINE.md">Documentation</a>
-          <a href="https://github.com/ricopoulos/Flow-Arto" target="_blank">GitHub</a>
-        </nav>
-      </div>
+    <div class="info-box">
+      <strong>Preview Environment:</strong> This page provides easy access to preview ongoing work. Each project below is in active development.
     </div>
-  </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="badge">Multi-Agent Design Intelligence</div>
-      <h1>Flow Studio</h1>
-      <p class="subtitle">
-        Natural-language design workflows powered by specialized AI agents
-      </p>
-      <p class="description">
-        Flow Studio is a design intelligence engine that transforms natural language intent into production-ready web experiences. Through multi-agent collaboration, it generates layouts, tokens, semantic HTML/CSS, and comprehensive evaluations—all optimized for accessibility, conversion, and aesthetic excellence.
-      </p>
-    </div>
-  </section>
-
-  <!-- Workflow -->
-  <section class="agents">
-    <div class="container">
-      <h2 class="section-title" id="agents">Multi-Agent Workflow</h2>
-      <p class="section-subtitle">
-        Five specialized agents collaborate to transform your vision into reality
-      </p>
-
-      <div class="workflow-diagram">
-        <div class="workflow-steps">
-          <div class="workflow-step">
-            <strong>1. Arto</strong>
-            <span>Layout & Strategy</span>
-          </div>
-          <span class="workflow-arrow">→</span>
-          <div class="workflow-step">
-            <strong>2. Stylist</strong>
-            <span>Design Tokens</span>
-          </div>
-          <span class="workflow-arrow">→</span>
-          <div class="workflow-step">
-            <strong>3. Builder</strong>
-            <span>HTML/CSS</span>
-          </div>
-          <span class="workflow-arrow">→</span>
-          <div class="workflow-step">
-            <strong>4. Curator</strong>
-            <span>QA & Evaluation</span>
-          </div>
-          <span class="workflow-arrow">→</span>
-          <div class="workflow-step">
-            <strong>5. Maestro</strong>
-            <span>Integration</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="agents-grid">
-        <!-- Arto -->
-        <div class="agent-card">
-          <div class="agent-icon" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);">
-            📐
-          </div>
-          <h3>Arto</h3>
-          <p class="role">UI/UX Strategist</p>
-          <p>Interprets user intent and business goals. Creates information architecture, content hierarchy, and conversion-focused layouts.</p>
-        </div>
-
-        <!-- Stylist -->
-        <div class="agent-card">
-          <div class="agent-icon" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
-            🎨
-          </div>
-          <h3>Stylist</h3>
-          <p class="role">Design Token Generator</p>
-          <p>Generates project-specific design tokens with validated contrast ratios. Ensures accessibility (WCAG AA+) and aesthetic coherence.</p>
-        </div>
-
-        <!-- Builder -->
-        <div class="agent-card">
-          <div class="agent-icon" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
-            🔨
-          </div>
-          <h3>Builder</h3>
-          <p class="role">HTML/CSS Developer</p>
-          <p>Translates designs into semantic, accessible code. Token-driven CSS, mobile-first responsiveness, keyboard navigation.</p>
-        </div>
-
-        <!-- Curator -->
-        <div class="agent-card">
-          <div class="agent-icon" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
-            ✅
-          </div>
-          <h3>Curator</h3>
-          <p class="role">Design Evaluator</p>
-          <p>Reviews all outputs against UX principles, accessibility standards, and conversion best practices. Provides actionable recommendations.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="projects">
-    <div class="container">
-      <h2 class="section-title" id="projects">Example Projects</h2>
-      <p class="section-subtitle">
-        Real-world applications built with Flow Studio
-      </p>
-
-      <!-- Carlton Select Project -->
+    <div class="projects">
+      <!-- Carlton Select -->
       <div class="project-card">
-        <div class="project-preview">
-          <div class="project-preview-content">
-            <h4>Carlton Select™</h4>
-            <p class="tagline">Curated Miami Foreclosure Opportunities</p>
-            <span class="project-badge">Luxury Real Estate</span>
+        <div class="project-header">
+          <div>
+            <h2 class="project-title">Carlton Select</h2>
           </div>
+          <span class="project-status status-testing">Testing</span>
         </div>
-        <div class="project-content">
-          <h3>Carlton Select Micro-Landing Page</h3>
-          <div class="project-meta">
-            <span>🎯 Membership Acquisition</span>
-            <span>👥 Accredited Investors</span>
-            <span>📅 Nov 2025</span>
-          </div>
-          <p>
-            An exclusive micro-landing page for a curated Miami foreclosure listing service. Targets high-net-worth investors with a refined luxury aesthetic (navy, gold, champagne) and conversion-optimized 3-field form.
-          </p>
 
-          <div class="project-stats">
-            <div class="stat">
-              <span class="stat-value">A</span>
-              <span class="stat-label">Curator Grade</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">AAA</span>
-              <span class="stat-label">WCAG</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">92/100</span>
-              <span class="stat-label">Overall Score</span>
-            </div>
-          </div>
+        <p class="project-description">
+          Exclusive membership-based service for curated Miami foreclosure opportunities.
+          Micro-landing page with luxury real estate aesthetic (navy, gold, champagne palette).
+        </p>
 
-          <div class="button-group">
-            <a href="web/carlton-select/" class="button button-primary">View Live Demo</a>
-            <a href="design/layout.carlton-select.md" class="button button-secondary">View Layout Docs</a>
-            <a href="curator/carlton-select-report.md" class="button button-secondary">Read Evaluation</a>
+        <div class="project-meta">
+          <span>🎨 Brand: Luxury Real Estate</span>
+          <span>📅 Created: Nov 2025</span>
+        </div>
+
+        <div class="project-links">
+          <a href="/Flow-Arto/web/carlton-select/" class="btn btn-primary">View Preview</a>
+          <a href="https://github.com/ricopoulos/Flow-Arto/tree/main/web/carlton-select" class="btn btn-secondary" target="_blank">View Code</a>
+        </div>
+      </div>
+
+      <!-- Flow Studio -->
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h2 class="project-title">Flow Studio</h2>
           </div>
+          <span class="project-status status-dev">In Development</span>
+        </div>
+
+        <p class="project-description">
+          AI design agents platform landing page. Demonstrates the complete Flow Studio design system:
+          token-driven, brand-aware, systematic approach. Features Arto, Stylist, Builder, Curator, and Maestro agents.
+        </p>
+
+        <div class="project-meta">
+          <span>🎨 Brand: Technical Elegance</span>
+          <span>📅 Created: Nov 2025</span>
+        </div>
+
+        <div class="project-links">
+          <a href="/Flow-Arto/web/flow-studio/" class="btn btn-primary">View Preview</a>
+          <a href="https://github.com/ricopoulos/Flow-Arto/tree/main/web/flow-studio" class="btn btn-secondary" target="_blank">View Code</a>
         </div>
       </div>
 
       <!-- Future Projects Placeholder -->
-      <div style="text-align: center; margin-top: 48px; padding: 48px; background: var(--color-white); border: 2px dashed var(--color-gray-300); border-radius: 12px;">
-        <h3 style="color: var(--color-gray-600); margin-bottom: 16px;">More Projects Coming Soon</h3>
-        <p style="color: var(--color-gray-600);">
-          Flow Studio adapts to any aesthetic: premium medical, playful kids, minimalist SaaS, and more.
+      <div class="project-card" style="opacity: 0.6; border-style: dashed;">
+        <div class="project-header">
+          <div>
+            <h2 class="project-title">Future Projects</h2>
+          </div>
+          <span class="project-status status-dev">Coming Soon</span>
+        </div>
+
+        <p class="project-description">
+          Additional brand implementations and design system tests will appear here as they're developed.
         </p>
+
+        <div class="project-meta">
+          <span>🎨 Brand: TBD</span>
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p><strong>Flow Studio</strong> — Design Intelligence, Not Design Systems</p>
-      <p>
-        <a href="docs/DESIGN-ENGINE.md">Documentation</a>
-        <a href="https://github.com/ricopoulos/Flow-Arto">GitHub</a>
-        <a href="#agents">About</a>
-      </p>
-      <p style="font-size: 14px; color: var(--color-gray-500); margin-top: 24px;">
-        © 2025 Flow Studio. Built with multi-agent intelligence.
-      </p>
-    </div>
-  </footer>
-
+    <footer>
+      <p>Flow-Arto Design System • Built with systematic design, not magic</p>
+    </footer>
+  </div>
 </body>
 </html>
