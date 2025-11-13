@@ -1,0 +1,187 @@
+<!--
+Component: button
+Purpose: Primary interactive element for user actions
+Category: primitives
+Version: 1.0.0
+
+Variants:
+  - primary: Main call-to-action (high emphasis)
+  - secondary: Secondary action (medium emphasis)
+  - ghost: Subtle action (low emphasis)
+  - link: Text link styled as button
+
+Slots:
+  - label: Button text (required)
+  - icon: Optional icon (before or after text)
+
+Tokens Used:
+  - color.accent
+  - color.accent-text
+  - color.surface
+  - color.text.primary
+  - color.border
+  - spacing.sm
+  - spacing.md
+  - spacing.lg
+  - radius.md
+  - type.size.base
+  - type.weight.bold
+  - shadow.sm (for hover state)
+
+Behavior:
+  - Min touch target 44x44px on mobile
+  - Hover state increases shadow/lightness
+  - Active state slightly scales down
+  - Disabled state reduces opacity to 0.5
+  - Focus state shows visible outline
+  - Respects prefers-reduced-motion
+
+Accessibility:
+  - Keyboard accessible (native button element)
+  - Focus visible (outline)
+  - Disabled state announced to screen readers
+  - Icon-only buttons require aria-label
+  - Min contrast ratio 4.5:1 for text
+
+Example Usage:
+  <button class="btn btn--primary">Get Started</button>
+  <button class="btn btn--secondary">Learn More</button>
+  <button class="btn btn--ghost">Skip</button>
+-->
+
+<button class="btn btn--primary" type="button">
+  <span class="btn__label">Button Label</span>
+</button>
+
+<style>
+/* Base Button Styles */
+.btn {
+  /* Reset */
+  appearance: none;
+  border: none;
+  background: none;
+  margin: 0;
+
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm, 0.5rem);
+
+  /* Sizing */
+  min-height: 44px;
+  padding: var(--spacing-sm, 0.5rem) var(--spacing-lg, 1.5rem);
+
+  /* Typography */
+  font-size: var(--type-size-base, 1rem);
+  font-weight: var(--type-weight-bold, 600);
+  font-family: inherit;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+
+  /* Visual */
+  border-radius: var(--radius-md, 0.375rem);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  /* User interaction */
+  user-select: none;
+}
+
+/* Primary Variant - High Emphasis */
+.btn--primary {
+  background-color: var(--color-accent, #3b82f6);
+  color: var(--color-accent-text, #ffffff);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background-color: var(--color-accent-hover, #2563eb);
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.btn--primary:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Secondary Variant - Medium Emphasis */
+.btn--secondary {
+  background-color: var(--color-surface, #f3f4f6);
+  color: var(--color-text-primary, #1f2937);
+  border: 1px solid var(--color-border, #e5e7eb);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background-color: var(--color-surface-hover, #e5e7eb);
+  border-color: var(--color-border-hover, #d1d5db);
+}
+
+.btn--secondary:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Ghost Variant - Low Emphasis */
+.btn--ghost {
+  background-color: transparent;
+  color: var(--color-accent, #3b82f6);
+  border: 1px solid var(--color-accent, #3b82f6);
+}
+
+.btn--ghost:hover:not(:disabled) {
+  background-color: var(--color-accent-subtle, rgba(59, 130, 246, 0.1));
+}
+
+.btn--ghost:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Link Variant - Text Link Style */
+.btn--link {
+  background-color: transparent;
+  color: var(--color-accent, #3b82f6);
+  padding: var(--spacing-xs, 0.25rem) var(--spacing-sm, 0.5rem);
+  min-height: auto;
+}
+
+.btn--link:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+/* States */
+.btn:focus-visible {
+  outline: 2px solid var(--color-accent, #3b82f6);
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Icon Support */
+.btn__icon {
+  width: 1.25em;
+  height: 1.25em;
+  flex-shrink: 0;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+
+  .btn:active:not(:disabled) {
+    transform: none;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .btn {
+    min-height: 48px; /* Larger touch target on mobile */
+    font-size: var(--type-size-sm, 0.875rem);
+  }
+}
+</style>

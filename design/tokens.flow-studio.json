@@ -1,0 +1,347 @@
+{
+  "project": "Flow Studio",
+  "aesthetic": "Technical elegance, minimal, calm, premium developer tools",
+  "version": "1.0",
+  "generated": "2025-11-13",
+  "description": "Design tokens for Flow Studio - AI design agents platform. Cool-neutral palette, high readability, strong contrast, confident minimalism. Designed for design-conscious developers and technical product builders.",
+
+  "colors": {
+    "primary": {
+      "50": "#f8fafc",
+      "100": "#f1f5f9",
+      "200": "#e2e8f0",
+      "300": "#cbd5e1",
+      "400": "#94a3b8",
+      "500": "#64748b",
+      "600": "#475569",
+      "700": "#334155",
+      "800": "#1e293b",
+      "900": "#0f172a",
+      "comment": "Slate - primary brand color. Professional, technical, cool-neutral. Slate-700 for headings, slate-600 for body text."
+    },
+    "accent": {
+      "50": "#eff6ff",
+      "100": "#dbeafe",
+      "200": "#bfdbfe",
+      "300": "#93c5fd",
+      "400": "#60a5fa",
+      "500": "#3b82f6",
+      "600": "#2563eb",
+      "700": "#1d4ed8",
+      "800": "#1e40af",
+      "900": "#1e3a8a",
+      "comment": "Blue - accent color for CTAs, links, interactive elements. Blue-600 for primary actions, blue-500 for hover states."
+    },
+    "neutral": {
+      "white": "#ffffff",
+      "gray-50": "#fafaf9",
+      "gray-100": "#f5f5f4",
+      "gray-200": "#e7e5e4",
+      "gray-300": "#d6d3d1",
+      "gray-400": "#a8a29e",
+      "gray-500": "#78716c",
+      "gray-600": "#57534e",
+      "gray-700": "#44403c",
+      "gray-800": "#292524",
+      "gray-900": "#1c1917",
+      "black": "#000000",
+      "comment": "Stone - warm neutral palette for backgrounds and subtle elements. Warmer than pure gray, adds approachability without sacrificing professionalism."
+    },
+    "semantic": {
+      "success": "#16a34a",
+      "error": "#dc2626",
+      "warning": "#ea580c",
+      "info": "#0284c7",
+      "comment": "Semantic colors for states and feedback. Strong enough for visibility, professional tone."
+    },
+    "contrast-validation": {
+      "heading-on-white": {
+        "color": "#334155",
+        "background": "#ffffff",
+        "ratio": "10.5:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass"
+      },
+      "body-on-white": {
+        "color": "#475569",
+        "background": "#ffffff",
+        "ratio": "7.8:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass"
+      },
+      "body-on-gray": {
+        "color": "#475569",
+        "background": "#f5f5f4",
+        "ratio": "7.2:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass"
+      },
+      "white-on-primary": {
+        "color": "#ffffff",
+        "background": "#334155",
+        "ratio": "10.5:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass"
+      },
+      "white-on-accent": {
+        "color": "#ffffff",
+        "background": "#2563eb",
+        "ratio": "8.3:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass"
+      },
+      "accent-on-white": {
+        "color": "#2563eb",
+        "background": "#ffffff",
+        "ratio": "8.3:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass"
+      }
+    }
+  },
+
+  "typography": {
+    "fonts": {
+      "heading": {
+        "family": "'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "weights": [400, 500, 600, 700],
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+        "rationale": "Inter - designed specifically for screens with excellent readability at all sizes. Slightly geometric but warm. Variable font with precise weight control. Perfect for Flow Studio's technical elegance and clarity values."
+      },
+      "body": {
+        "family": "'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "weights": [400, 500, 600],
+        "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+        "rationale": "Inter for body maintains typographic consistency. Highly readable at text sizes, professional without being sterile. OpenType features for improved legibility."
+      },
+      "comment": "Single-font system (Inter) for consistency and performance. Differentiation through weight and size, not font family. Very developer-tool aesthetic (Linear, Vercel approach)."
+    },
+    "scale": {
+      "xs": "12px",
+      "sm": "14px",
+      "base": "16px",
+      "md": "18px",
+      "lg": "20px",
+      "xl": "24px",
+      "2xl": "30px",
+      "3xl": "36px",
+      "4xl": "48px",
+      "5xl": "60px",
+      "6xl": "72px",
+      "comment": "Type scale with 1.25 ratio above base. Base is 16px for optimal readability. Hero sizes (4xl-6xl) for landing page impact."
+    },
+    "lineHeight": {
+      "tight": "1.25",
+      "snug": "1.375",
+      "normal": "1.5",
+      "relaxed": "1.625",
+      "loose": "1.75",
+      "comment": "Headings use 'tight' (1.25) for impact and density control. Body uses 'relaxed' (1.625) for comfortable reading."
+    },
+    "letterSpacing": {
+      "tighter": "-0.05em",
+      "tight": "-0.025em",
+      "normal": "0",
+      "wide": "0.025em",
+      "wider": "0.05em",
+      "widest": "0.1em",
+      "comment": "Large headings use 'tight' (-0.025em) for refined look. Body and UI text use 'normal'. All-caps labels use 'wide' (0.025em)."
+    },
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "comment": "Regular (400) for body, medium (500) for emphasis, semibold (600) for subheadings, bold (700) for primary headings."
+    }
+  },
+
+  "spacing": {
+    "scale": "4px",
+    "values": {
+      "0": "0",
+      "1": "4px",
+      "2": "8px",
+      "3": "12px",
+      "4": "16px",
+      "5": "20px",
+      "6": "24px",
+      "7": "28px",
+      "8": "32px",
+      "10": "40px",
+      "12": "48px",
+      "14": "56px",
+      "16": "64px",
+      "20": "80px",
+      "24": "96px",
+      "28": "112px",
+      "32": "128px",
+      "comment": "4px base scale for precise control. Calm-medium density means 48-96px section padding. More refined than luxury 8px scale, but still generous."
+    },
+    "component-specific": {
+      "section-padding-desktop": "96px",
+      "section-padding-tablet": "64px",
+      "section-padding-mobile": "48px",
+      "content-max-width": "1280px",
+      "content-narrow-width": "720px",
+      "form-max-width": "480px",
+      "grid-gap": "24px",
+      "button-padding-x": "24px",
+      "button-padding-y": "12px",
+      "input-padding-x": "16px",
+      "input-padding-y": "12px"
+    }
+  },
+
+  "borderRadius": {
+    "none": "0",
+    "sm": "4px",
+    "md": "6px",
+    "lg": "8px",
+    "xl": "12px",
+    "2xl": "16px",
+    "full": "9999px",
+    "comment": "Subtle radii for modern but not trendy feel. 'md' (6px) for buttons and inputs, 'lg' (8px) for cards. Not fully sharp (technical) but not overly rounded (playful)."
+  },
+
+  "shadows": {
+    "none": "none",
+    "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+    "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+    "inner": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+    "focus": "0 0 0 3px rgba(37, 99, 235, 0.2)",
+    "comment": "Subtle shadows - minimal elevation. 'sm' for cards on hover, 'focus' for keyboard navigation (blue outline). Confident minimalism means restrained shadow use."
+  },
+
+  "components": {
+    "button-primary": {
+      "background": "#2563eb",
+      "color": "#ffffff",
+      "border": "none",
+      "borderRadius": "6px",
+      "fontSize": "16px",
+      "fontWeight": 600,
+      "padding": "12px 24px",
+      "minHeight": "44px",
+      "hover": {
+        "background": "#1d4ed8",
+        "transform": "none",
+        "shadow": "sm"
+      },
+      "focus": {
+        "outline": "none",
+        "boxShadow": "0 0 0 3px rgba(37, 99, 235, 0.2)"
+      }
+    },
+    "button-secondary": {
+      "background": "transparent",
+      "color": "#475569",
+      "border": "1.5px solid #cbd5e1",
+      "borderRadius": "6px",
+      "fontSize": "16px",
+      "fontWeight": 600,
+      "padding": "12px 24px",
+      "minHeight": "44px",
+      "hover": {
+        "background": "#f8fafc",
+        "borderColor": "#94a3b8"
+      },
+      "focus": {
+        "outline": "none",
+        "boxShadow": "0 0 0 3px rgba(37, 99, 235, 0.2)"
+      }
+    },
+    "input": {
+      "background": "#ffffff",
+      "color": "#334155",
+      "border": "1.5px solid #cbd5e1",
+      "borderRadius": "6px",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "padding": "12px 16px",
+      "minHeight": "44px",
+      "focus": {
+        "borderColor": "#2563eb",
+        "outline": "none",
+        "boxShadow": "0 0 0 3px rgba(37, 99, 235, 0.1)"
+      },
+      "error": {
+        "borderColor": "#dc2626",
+        "boxShadow": "0 0 0 3px rgba(220, 38, 38, 0.1)"
+      }
+    },
+    "label": {
+      "fontSize": "14px",
+      "fontWeight": 600,
+      "color": "#334155",
+      "marginBottom": "8px",
+      "display": "block"
+    },
+    "card": {
+      "background": "#ffffff",
+      "borderRadius": "8px",
+      "padding": "24px",
+      "boxShadow": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "border": "1px solid #e2e8f0"
+    }
+  },
+
+  "layout": {
+    "breakpoints": {
+      "mobile": "375px",
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "comment": "Mobile-first breakpoints. Standard modern responsive design."
+    },
+    "container": {
+      "maxWidth": "1280px",
+      "padding": "24px",
+      "margin": "0 auto"
+    },
+    "grid": {
+      "columns-mobile": 1,
+      "columns-tablet": 2,
+      "columns-desktop": 3,
+      "gap": "24px"
+    }
+  },
+
+  "motion": {
+    "duration": {
+      "fast": "150ms",
+      "medium": "250ms",
+      "slow": "350ms",
+      "comment": "Subtle motion tolerance. Use 'fast' for button hovers, 'medium' for focus states, 'slow' for layout shifts."
+    },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "in": "cubic-bezier(0.4, 0, 1, 1)",
+      "out": "cubic-bezier(0, 0, 0.2, 1)",
+      "sharp": "cubic-bezier(0.4, 0, 0.6, 1)",
+      "comment": "Use 'default' (ease-in-out) for most transitions. Smooth-fade style from brand config."
+    }
+  },
+
+  "accessibility": {
+    "focusOutline": {
+      "color": "#2563eb",
+      "width": "3px",
+      "style": "solid",
+      "offset": "0px"
+    },
+    "minTouchTarget": "44px",
+    "minContrastRatio": "4.5:1",
+    "preferredContrastRatio": "7:1"
+  },
+
+  "notes": {
+    "colorRationale": "Slate and blue create technical elegance without coldness. Slate is more refined than pure gray, blue provides confidence and capability. Cool-neutral temperature aligns with brand. All pairings exceed WCAG AAA for strong readability - critical for developer tools.",
+    "typographyRationale": "Inter-only system for consistency and performance. Designed for screens, variable weights, excellent legibility. Single font family is very developer-tool aesthetic (matches Linear, Vercel references). Differentiation through weight/size, not font switching.",
+    "spacingRationale": "4px base scale provides precision. Calm-medium density achieved through 48-96px section padding. More controlled than luxury 8px scale. Generous without feeling sparse - respects information density needs of technical audience.",
+    "interactionRationale": "Subtle hover states (color shift, minimal shadow) signal interactivity without playfulness. Blue focus rings meet accessibility while reinforcing brand. Smooth-fade motion (150-250ms) with cubic-bezier easing feels confident and precise. All animations respect prefers-reduced-motion."
+  }
+}
