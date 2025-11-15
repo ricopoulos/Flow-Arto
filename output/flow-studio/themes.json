@@ -1,0 +1,908 @@
+[
+  {
+    "id": "slate-professional",
+    "name": "Slate Professional",
+    "description": "The quintessential Flow Studio aesthetic. Cool slate with measured blue accents. Maximum clarity and professionalism.",
+    "mood": "professional",
+    "useCase": "Default theme - ideal for landing pages, product pages, documentation",
+    "colors": {
+      "primary": "#475569",
+      "primaryLight": "#64748b",
+      "primaryDark": "#334155",
+      "accent": "#2563eb",
+      "accentLight": "#3b82f6",
+      "accentDark": "#1d4ed8",
+      "background": "#ffffff",
+      "surface": "#f8fafc",
+      "surfaceElevated": "#ffffff",
+      "text": "#0f172a",
+      "textMuted": "#64748b",
+      "border": "#e2e8f0"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "700",
+      "bodyWeight": "400",
+      "scale": "1.25"
+    },
+    "spacing": {
+      "section": "6rem",
+      "cardGap": "1.5rem",
+      "contentPadding": "2rem",
+      "density": "calm-medium"
+    },
+    "motion": {
+      "duration": "250ms",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "style": "smooth-fade"
+    },
+    "effects": {
+      "shadows": "subtle",
+      "borderRadius": "0.375rem",
+      "contrast": "medium-high"
+    },
+    "features": ["WCAG AAA", "Variable fonts", "Systematic spacing", "Clean hierarchy"]
+  },
+  {
+    "id": "minimal-slate",
+    "name": "Minimal Slate",
+    "description": "Ultra-minimal interpretation. Maximum whitespace, whisper-quiet colors. For when less is truly more.",
+    "mood": "minimal",
+    "useCase": "Portfolio sites, case studies, focused content",
+    "colors": {
+      "primary": "#3f3f46",
+      "primaryLight": "#52525b",
+      "primaryDark": "#27272a",
+      "accent": "#18181b",
+      "accentLight": "#27272a",
+      "accentDark": "#09090b",
+      "background": "#ffffff",
+      "surface": "#fafafa",
+      "surfaceElevated": "#ffffff",
+      "text": "#18181b",
+      "textMuted": "#71717a",
+      "border": "#f4f4f5"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "500",
+      "bodyWeight": "300",
+      "scale": "1.333"
+    },
+    "spacing": {
+      "section": "8rem",
+      "cardGap": "3rem",
+      "contentPadding": "3rem",
+      "density": "spacious"
+    },
+    "motion": {
+      "duration": "350ms",
+      "easing": "cubic-bezier(0, 0, 0.2, 1)",
+      "style": "gentle-fade"
+    },
+    "effects": {
+      "shadows": "none",
+      "borderRadius": "0",
+      "contrast": "low"
+    },
+    "features": ["Ultra-minimal", "Maximum whitespace", "No shadows", "Sharp edges"]
+  },
+  {
+    "id": "blue-intelligence",
+    "name": "Blue Intelligence",
+    "description": "Blue takes center stage. Confident, capable, trustworthy. Ideal for emphasizing the AI/tech aspect.",
+    "mood": "professional",
+    "useCase": "Product pages, feature showcases, technical content",
+    "colors": {
+      "primary": "#1e40af",
+      "primaryLight": "#2563eb",
+      "primaryDark": "#1e3a8a",
+      "accent": "#3b82f6",
+      "accentLight": "#60a5fa",
+      "accentDark": "#2563eb",
+      "background": "#ffffff",
+      "surface": "#eff6ff",
+      "surfaceElevated": "#ffffff",
+      "text": "#1e293b",
+      "textMuted": "#475569",
+      "border": "#dbeafe"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "800",
+      "bodyWeight": "400",
+      "scale": "1.25"
+    },
+    "spacing": {
+      "section": "5rem",
+      "cardGap": "1.5rem",
+      "contentPadding": "2rem",
+      "density": "balanced"
+    },
+    "motion": {
+      "duration": "200ms",
+      "easing": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "style": "spring"
+    },
+    "effects": {
+      "shadows": "medium",
+      "borderRadius": "0.5rem",
+      "contrast": "high"
+    },
+    "features": ["Bold blue", "Springy motion", "Clear hierarchy", "High energy"]
+  },
+  {
+    "id": "dark-slate",
+    "name": "Dark Slate",
+    "description": "Dark mode done right. Cool slate on deep navy. Premium and sophisticated without being harsh.",
+    "mood": "professional",
+    "useCase": "Dark mode preference, IDE-like interfaces, late-night browsing",
+    "colors": {
+      "primary": "#cbd5e1",
+      "primaryLight": "#e2e8f0",
+      "primaryDark": "#94a3b8",
+      "accent": "#60a5fa",
+      "accentLight": "#93c5fd",
+      "accentDark": "#3b82f6",
+      "background": "#0f172a",
+      "surface": "#1e293b",
+      "surfaceElevated": "#334155",
+      "text": "#f1f5f9",
+      "textMuted": "#94a3b8",
+      "border": "#334155"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "700",
+      "bodyWeight": "400",
+      "scale": "1.25"
+    },
+    "spacing": {
+      "section": "6rem",
+      "cardGap": "1.5rem",
+      "contentPadding": "2rem",
+      "density": "calm-medium"
+    },
+    "motion": {
+      "duration": "250ms",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "style": "smooth"
+    },
+    "effects": {
+      "shadows": "elevated",
+      "borderRadius": "0.375rem",
+      "contrast": "high",
+      "glow": "subtle blue glow on interactive elements"
+    },
+    "features": ["True dark mode", "WCAG AAA on dark", "Elevated surfaces", "Subtle glow"]
+  },
+  {
+    "id": "editorial-clean",
+    "name": "Editorial Clean",
+    "description": "Typography-first. Large, clear type with generous line-height. For content-heavy experiences.",
+    "mood": "editorial",
+    "useCase": "Blogs, documentation, long-form content, articles",
+    "colors": {
+      "primary": "#18181b",
+      "primaryLight": "#27272a",
+      "primaryDark": "#09090b",
+      "accent": "#2563eb",
+      "accentLight": "#3b82f6",
+      "accentDark": "#1d4ed8",
+      "background": "#ffffff",
+      "surface": "#fafafa",
+      "surfaceElevated": "#ffffff",
+      "text": "#09090b",
+      "textMuted": "#52525b",
+      "border": "#e4e4e7"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "600",
+      "bodyWeight": "400",
+      "scale": "1.333",
+      "lineHeight": "1.75"
+    },
+    "spacing": {
+      "section": "7rem",
+      "cardGap": "2.5rem",
+      "contentPadding": "3rem",
+      "density": "relaxed"
+    },
+    "motion": {
+      "duration": "300ms",
+      "easing": "cubic-bezier(0, 0, 0.2, 1)",
+      "style": "fade"
+    },
+    "effects": {
+      "shadows": "minimal",
+      "borderRadius": "0.25rem",
+      "contrast": "high"
+    },
+    "features": ["Large type", "Perfect line-height", "Reading-optimized", "Content-first"]
+  },
+  {
+    "id": "calm-neutral",
+    "name": "Calm Neutral",
+    "description": "True neutrals with barely-there blue tint. Maximum calmness and approachability.",
+    "mood": "approachable",
+    "useCase": "Onboarding, help docs, community pages",
+    "colors": {
+      "primary": "#52525b",
+      "primaryLight": "#71717a",
+      "primaryDark": "#3f3f46",
+      "accent": "#3b82f6",
+      "accentLight": "#60a5fa",
+      "accentDark": "#2563eb",
+      "background": "#fafafa",
+      "surface": "#ffffff",
+      "surfaceElevated": "#ffffff",
+      "text": "#18181b",
+      "textMuted": "#71717a",
+      "border": "#e4e4e7"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "600",
+      "bodyWeight": "400",
+      "scale": "1.2"
+    },
+    "spacing": {
+      "section": "5rem",
+      "cardGap": "1.25rem",
+      "contentPadding": "2rem",
+      "density": "comfortable"
+    },
+    "motion": {
+      "duration": "300ms",
+      "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "style": "gentle"
+    },
+    "effects": {
+      "shadows": "soft",
+      "borderRadius": "0.5rem",
+      "contrast": "medium"
+    },
+    "features": ["Warm neutrals", "Soft shadows", "Gentle motion", "Approachable"]
+  },
+  {
+    "id": "contrast-bold",
+    "name": "Contrast Bold",
+    "description": "Maximum contrast, bold weights. For making a statement without sacrificing clarity.",
+    "mood": "bold",
+    "useCase": "Landing pages, hero sections, CTAs",
+    "colors": {
+      "primary": "#0f172a",
+      "primaryLight": "#1e293b",
+      "primaryDark": "#020617",
+      "accent": "#2563eb",
+      "accentLight": "#3b82f6",
+      "accentDark": "#1d4ed8",
+      "background": "#ffffff",
+      "surface": "#f8fafc",
+      "surfaceElevated": "#ffffff",
+      "text": "#0f172a",
+      "textMuted": "#475569",
+      "border": "#e2e8f0"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "800",
+      "bodyWeight": "500",
+      "scale": "1.333"
+    },
+    "spacing": {
+      "section": "5rem",
+      "cardGap": "2rem",
+      "contentPadding": "2.5rem",
+      "density": "impactful"
+    },
+    "motion": {
+      "duration": "200ms",
+      "easing": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "style": "snappy"
+    },
+    "effects": {
+      "shadows": "strong",
+      "borderRadius": "0.5rem",
+      "contrast": "maximum"
+    },
+    "features": ["Ultra-bold type", "Maximum contrast", "Strong shadows", "Impactful"]
+  },
+  {
+    "id": "soft-professional",
+    "name": "Soft Professional",
+    "description": "Professional but gentler. Lower contrast, softer shadows. Easy on the eyes for extended use.",
+    "mood": "professional",
+    "useCase": "Dashboards, admin panels, all-day interfaces",
+    "colors": {
+      "primary": "#64748b",
+      "primaryLight": "#94a3b8",
+      "primaryDark": "#475569",
+      "accent": "#3b82f6",
+      "accentLight": "#60a5fa",
+      "accentDark": "#2563eb",
+      "background": "#f8fafc",
+      "surface": "#ffffff",
+      "surfaceElevated": "#ffffff",
+      "text": "#334155",
+      "textMuted": "#64748b",
+      "border": "#e2e8f0"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "600",
+      "bodyWeight": "400",
+      "scale": "1.2"
+    },
+    "spacing": {
+      "section": "4rem",
+      "cardGap": "1rem",
+      "contentPadding": "1.5rem",
+      "density": "comfortable"
+    },
+    "motion": {
+      "duration": "300ms",
+      "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "style": "gentle"
+    },
+    "effects": {
+      "shadows": "very-soft",
+      "borderRadius": "0.5rem",
+      "contrast": "medium-low"
+    },
+    "features": ["Easy on eyes", "Soft contrast", "Comfortable density", "All-day use"]
+  },
+  {
+    "id": "midnight-blue",
+    "name": "Midnight Blue",
+    "description": "Deep blue-black background with electric blue accents. Premium dark theme with personality.",
+    "mood": "bold",
+    "useCase": "Product showcases, premium features, pro tier",
+    "colors": {
+      "primary": "#93c5fd",
+      "primaryLight": "#bfdbfe",
+      "primaryDark": "#60a5fa",
+      "accent": "#3b82f6",
+      "accentLight": "#60a5fa",
+      "accentDark": "#2563eb",
+      "background": "#0c1222",
+      "surface": "#151d30",
+      "surfaceElevated": "#1e2a42",
+      "text": "#e0e7ff",
+      "textMuted": "#93c5fd",
+      "border": "#1e2a42"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "700",
+      "bodyWeight": "400",
+      "scale": "1.25"
+    },
+    "spacing": {
+      "section": "6rem",
+      "cardGap": "1.5rem",
+      "contentPadding": "2rem",
+      "density": "premium"
+    },
+    "motion": {
+      "duration": "250ms",
+      "easing": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "style": "smooth"
+    },
+    "effects": {
+      "shadows": "colored",
+      "borderRadius": "0.75rem",
+      "contrast": "high",
+      "glow": "blue glow on cards"
+    },
+    "features": ["Premium dark", "Blue-tinted", "Colored shadows", "Electric accents"]
+  },
+  {
+    "id": "precision-mono",
+    "name": "Precision Mono",
+    "description": "Monochromatic with laser focus. Black, white, and shades of gray. Pure technical precision.",
+    "mood": "precise",
+    "useCase": "Technical docs, API references, developer tools",
+    "colors": {
+      "primary": "#18181b",
+      "primaryLight": "#27272a",
+      "primaryDark": "#09090b",
+      "accent": "#52525b",
+      "accentLight": "#71717a",
+      "accentDark": "#3f3f46",
+      "background": "#ffffff",
+      "surface": "#fafafa",
+      "surfaceElevated": "#ffffff",
+      "text": "#09090b",
+      "textMuted": "#71717a",
+      "border": "#d4d4d8"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "JetBrains Mono",
+      "headingWeight": "700",
+      "bodyWeight": "400",
+      "scale": "1.2"
+    },
+    "spacing": {
+      "section": "5rem",
+      "cardGap": "1rem",
+      "contentPadding": "1.5rem",
+      "density": "precise"
+    },
+    "motion": {
+      "duration": "150ms",
+      "easing": "linear",
+      "style": "instant"
+    },
+    "effects": {
+      "shadows": "sharp",
+      "borderRadius": "0.125rem",
+      "contrast": "maximum"
+    },
+    "features": ["Monochrome only", "Monospaced body", "Sharp edges", "Technical"]
+  },
+  {
+    "id": "airy-light",
+    "name": "Airy Light",
+    "description": "Maximum lightness and breathing room. Almost ethereal. For luxury and high-end positioning.",
+    "mood": "elegant",
+    "useCase": "Premium products, luxury experiences, high-end services",
+    "colors": {
+      "primary": "#94a3b8",
+      "primaryLight": "#cbd5e1",
+      "primaryDark": "#64748b",
+      "accent": "#60a5fa",
+      "accentLight": "#93c5fd",
+      "accentDark": "#3b82f6",
+      "background": "#ffffff",
+      "surface": "#fefefe",
+      "surfaceElevated": "#ffffff",
+      "text": "#475569",
+      "textMuted": "#94a3b8",
+      "border": "#f1f5f9"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "400",
+      "bodyWeight": "300",
+      "scale": "1.333"
+    },
+    "spacing": {
+      "section": "10rem",
+      "cardGap": "4rem",
+      "contentPadding": "4rem",
+      "density": "luxurious"
+    },
+    "motion": {
+      "duration": "500ms",
+      "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "style": "float"
+    },
+    "effects": {
+      "shadows": "barely-there",
+      "borderRadius": "1rem",
+      "contrast": "low"
+    },
+    "features": ["Ultra-light", "Maximum space", "Ethereal feel", "Luxury positioning"]
+  },
+  {
+    "id": "classic-slate",
+    "name": "Classic Slate",
+    "description": "Timeless slate and blue. This will look good in 2025 and 2035. No trends, just quality.",
+    "mood": "timeless",
+    "useCase": "Corporate sites, long-term brands, conservative industries",
+    "colors": {
+      "primary": "#475569",
+      "primaryLight": "#64748b",
+      "primaryDark": "#334155",
+      "accent": "#1d4ed8",
+      "accentLight": "#2563eb",
+      "accentDark": "#1e40af",
+      "background": "#ffffff",
+      "surface": "#f8fafc",
+      "surfaceElevated": "#ffffff",
+      "text": "#1e293b",
+      "textMuted": "#64748b",
+      "border": "#cbd5e1"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "600",
+      "bodyWeight": "400",
+      "scale": "1.25"
+    },
+    "spacing": {
+      "section": "5rem",
+      "cardGap": "1.5rem",
+      "contentPadding": "2rem",
+      "density": "balanced"
+    },
+    "motion": {
+      "duration": "250ms",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "style": "fade"
+    },
+    "effects": {
+      "shadows": "classic",
+      "borderRadius": "0.25rem",
+      "contrast": "medium"
+    },
+    "features": ["Timeless", "Never dated", "Classic proportions", "Conservative"]
+  },
+  {
+    "id": "compact-efficient",
+    "name": "Compact Efficient",
+    "description": "Information-dense without feeling cramped. For power users who want to see more at once.",
+    "mood": "efficient",
+    "useCase": "Dashboards, data-heavy interfaces, power user tools",
+    "colors": {
+      "primary": "#334155",
+      "primaryLight": "#475569",
+      "primaryDark": "#1e293b",
+      "accent": "#2563eb",
+      "accentLight": "#3b82f6",
+      "accentDark": "#1d4ed8",
+      "background": "#f8fafc",
+      "surface": "#ffffff",
+      "surfaceElevated": "#ffffff",
+      "text": "#0f172a",
+      "textMuted": "#475569",
+      "border": "#e2e8f0"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "700",
+      "bodyWeight": "400",
+      "scale": "1.15"
+    },
+    "spacing": {
+      "section": "3rem",
+      "cardGap": "0.75rem",
+      "contentPadding": "1rem",
+      "density": "compact"
+    },
+    "motion": {
+      "duration": "150ms",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "style": "quick"
+    },
+    "effects": {
+      "shadows": "minimal",
+      "borderRadius": "0.25rem",
+      "contrast": "medium-high"
+    },
+    "features": ["Compact spacing", "Information-dense", "Quick transitions", "Power user"]
+  },
+  {
+    "id": "warm-slate",
+    "name": "Warm Slate",
+    "description": "Slate with a warm tint. More approachable while maintaining professionalism.",
+    "mood": "approachable",
+    "useCase": "Customer-facing pages, support, community",
+    "colors": {
+      "primary": "#57534e",
+      "primaryLight": "#78716c",
+      "primaryDark": "#44403c",
+      "accent": "#2563eb",
+      "accentLight": "#3b82f6",
+      "accentDark": "#1d4ed8",
+      "background": "#fafaf9",
+      "surface": "#ffffff",
+      "surfaceElevated": "#ffffff",
+      "text": "#1c1917",
+      "textMuted": "#78716c",
+      "border": "#e7e5e4"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "600",
+      "bodyWeight": "400",
+      "scale": "1.25"
+    },
+    "spacing": {
+      "section": "5rem",
+      "cardGap": "1.5rem",
+      "contentPadding": "2rem",
+      "density": "comfortable"
+    },
+    "motion": {
+      "duration": "300ms",
+      "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "style": "gentle"
+    },
+    "effects": {
+      "shadows": "warm",
+      "borderRadius": "0.5rem",
+      "contrast": "medium"
+    },
+    "features": ["Warm tint", "Approachable", "Soft shadows", "Welcoming"]
+  },
+  {
+    "id": "focus-mode",
+    "name": "Focus Mode",
+    "description": "Minimal distractions, maximum concentration. Muted colors, clear hierarchy.",
+    "mood": "focused",
+    "useCase": "Writing interfaces, distraction-free reading, focused work",
+    "colors": {
+      "primary": "#52525b",
+      "primaryLight": "#71717a",
+      "primaryDark": "#3f3f46",
+      "accent": "#18181b",
+      "accentLight": "#27272a",
+      "accentDark": "#09090b",
+      "background": "#fafafa",
+      "surface": "#ffffff",
+      "surfaceElevated": "#ffffff",
+      "text": "#09090b",
+      "textMuted": "#a1a1aa",
+      "border": "#f4f4f5"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "500",
+      "bodyWeight": "400",
+      "scale": "1.25",
+      "lineHeight": "1.75"
+    },
+    "spacing": {
+      "section": "7rem",
+      "cardGap": "2rem",
+      "contentPadding": "3rem",
+      "density": "focused"
+    },
+    "motion": {
+      "duration": "350ms",
+      "easing": "cubic-bezier(0, 0, 0.2, 1)",
+      "style": "fade"
+    },
+    "effects": {
+      "shadows": "none",
+      "borderRadius": "0.25rem",
+      "contrast": "low-medium"
+    },
+    "features": ["Distraction-free", "Muted colors", "Perfect for reading", "Focus-optimized"]
+  },
+  {
+    "id": "high-clarity",
+    "name": "High Clarity",
+    "description": "Maximum readability and distinction. For accessibility-first experiences.",
+    "mood": "accessible",
+    "useCase": "Public services, education, accessibility-critical apps",
+    "colors": {
+      "primary": "#1e293b",
+      "primaryLight": "#334155",
+      "primaryDark": "#0f172a",
+      "accent": "#1d4ed8",
+      "accentLight": "#2563eb",
+      "accentDark": "#1e40af",
+      "background": "#ffffff",
+      "surface": "#f8fafc",
+      "surfaceElevated": "#ffffff",
+      "text": "#020617",
+      "textMuted": "#334155",
+      "border": "#cbd5e1"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "700",
+      "bodyWeight": "500",
+      "scale": "1.333"
+    },
+    "spacing": {
+      "section": "6rem",
+      "cardGap": "2rem",
+      "contentPadding": "2.5rem",
+      "density": "clear"
+    },
+    "motion": {
+      "duration": "250ms",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "style": "clear"
+    },
+    "effects": {
+      "shadows": "defined",
+      "borderRadius": "0.375rem",
+      "contrast": "maximum-safe"
+    },
+    "features": ["WCAG AAA+", "Maximum clarity", "Large type", "Strong contrast"]
+  },
+  {
+    "id": "slate-gradient",
+    "name": "Slate Gradient",
+    "description": "Subtle gradient backgrounds. Not heavy or consumer-y, just a refined touch.",
+    "mood": "refined",
+    "useCase": "Marketing pages, feature highlights, premium positioning",
+    "colors": {
+      "primary": "#475569",
+      "primaryLight": "#64748b",
+      "primaryDark": "#334155",
+      "accent": "#3b82f6",
+      "accentLight": "#60a5fa",
+      "accentDark": "#2563eb",
+      "background": "#ffffff",
+      "surface": "linear-gradient(180deg, #f8fafc 0%, #ffffff 100%)",
+      "surfaceElevated": "#ffffff",
+      "text": "#0f172a",
+      "textMuted": "#64748b",
+      "border": "#e2e8f0"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "700",
+      "bodyWeight": "400",
+      "scale": "1.25"
+    },
+    "spacing": {
+      "section": "6rem",
+      "cardGap": "1.5rem",
+      "contentPadding": "2rem",
+      "density": "refined"
+    },
+    "motion": {
+      "duration": "300ms",
+      "easing": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "style": "smooth"
+    },
+    "effects": {
+      "shadows": "elevated",
+      "borderRadius": "0.75rem",
+      "contrast": "medium-high",
+      "gradient": "subtle background gradients"
+    },
+    "features": ["Subtle gradients", "Refined feel", "Elevated cards", "Premium touch"]
+  },
+  {
+    "id": "code-centric",
+    "name": "Code Centric",
+    "description": "For developers, by developers. Monospace everywhere, syntax-inspired colors.",
+    "mood": "technical",
+    "useCase": "Developer tools, code editors, technical documentation",
+    "colors": {
+      "primary": "#1e293b",
+      "primaryLight": "#334155",
+      "primaryDark": "#0f172a",
+      "accent": "#06b6d4",
+      "accentLight": "#22d3ee",
+      "accentDark": "#0891b2",
+      "background": "#0f172a",
+      "surface": "#1e293b",
+      "surfaceElevated": "#334155",
+      "text": "#e2e8f0",
+      "textMuted": "#94a3b8",
+      "border": "#334155"
+    },
+    "fonts": {
+      "heading": "JetBrains Mono",
+      "body": "JetBrains Mono",
+      "headingWeight": "700",
+      "bodyWeight": "400",
+      "scale": "1.2"
+    },
+    "spacing": {
+      "section": "4rem",
+      "cardGap": "1rem",
+      "contentPadding": "1.5rem",
+      "density": "code"
+    },
+    "motion": {
+      "duration": "150ms",
+      "easing": "linear",
+      "style": "instant"
+    },
+    "effects": {
+      "shadows": "none",
+      "borderRadius": "0.25rem",
+      "contrast": "high",
+      "syntaxHighlight": true
+    },
+    "features": ["Monospace everything", "Dark IDE theme", "Syntax colors", "Developer-first"]
+  },
+  {
+    "id": "balanced-premium",
+    "name": "Balanced Premium",
+    "description": "The Goldilocks theme. Not too bold, not too minimal. Just right for most use cases.",
+    "mood": "balanced",
+    "useCase": "All-purpose, landing pages, general marketing",
+    "colors": {
+      "primary": "#475569",
+      "primaryLight": "#64748b",
+      "primaryDark": "#334155",
+      "accent": "#2563eb",
+      "accentLight": "#3b82f6",
+      "accentDark": "#1d4ed8",
+      "background": "#ffffff",
+      "surface": "#f8fafc",
+      "surfaceElevated": "#ffffff",
+      "text": "#0f172a",
+      "textMuted": "#64748b",
+      "border": "#cbd5e1"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "700",
+      "bodyWeight": "400",
+      "scale": "1.25"
+    },
+    "spacing": {
+      "section": "5rem",
+      "cardGap": "1.5rem",
+      "contentPadding": "2rem",
+      "density": "balanced"
+    },
+    "motion": {
+      "duration": "250ms",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "style": "smooth"
+    },
+    "effects": {
+      "shadows": "balanced",
+      "borderRadius": "0.5rem",
+      "contrast": "medium-high"
+    },
+    "features": ["Perfectly balanced", "All-purpose", "Safe choice", "Professional"]
+  },
+  {
+    "id": "modern-slate",
+    "name": "Modern Slate",
+    "description": "Contemporary interpretation of slate professional. Slightly bolder, slightly more personality.",
+    "mood": "modern",
+    "useCase": "Startups, modern products, tech-forward brands",
+    "colors": {
+      "primary": "#334155",
+      "primaryLight": "#475569",
+      "primaryDark": "#1e293b",
+      "accent": "#3b82f6",
+      "accentLight": "#60a5fa",
+      "accentDark": "#2563eb",
+      "background": "#ffffff",
+      "surface": "#f8fafc",
+      "surfaceElevated": "#ffffff",
+      "text": "#0f172a",
+      "textMuted": "#475569",
+      "border": "#e2e8f0"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "headingWeight": "800",
+      "bodyWeight": "400",
+      "scale": "1.333"
+    },
+    "spacing": {
+      "section": "5.5rem",
+      "cardGap": "1.75rem",
+      "contentPadding": "2.25rem",
+      "density": "modern"
+    },
+    "motion": {
+      "duration": "200ms",
+      "easing": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "style": "spring"
+    },
+    "effects": {
+      "shadows": "modern",
+      "borderRadius": "0.75rem",
+      "contrast": "high"
+    },
+    "features": ["Contemporary", "Bold weights", "Spring motion", "Tech-forward"]
+  }
+]
