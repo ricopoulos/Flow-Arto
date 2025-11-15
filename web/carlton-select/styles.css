@@ -1,44 +1,47 @@
 /* ============================================
    Carlton Select™ Styles
-   Token-Driven, Mobile-First, Accessible
+   Theme-Aware, Token-Driven, Mobile-First, Accessible
    ============================================ */
 
 /* ============================================
    CSS Custom Properties (Design Tokens)
-   Source: design/tokens.carlton-select.json
+   Now theme-aware - adapts to Flow Studio's 8-theme system
+   Source: design/tokens.carlton-select.json + shared/themes.js
    ============================================ */
 :root {
-  /* Colors - Primary */
-  --color-navy-900: #0f1f3d;
-  --color-navy-800: #1a365d;
-  --color-navy-700: #2c4875;
-  --color-navy-600: #3d5a8c;
+  /* Theme-Aware Colors - Map to shared theme system */
+  /* These will be overridden by theme switcher */
+  --color-navy-900: var(--color-primary-dark, #0f1f3d);
+  --color-navy-800: var(--color-primary, #1a365d);
+  --color-navy-700: var(--color-primary-light, #2c4875);
+  --color-navy-600: var(--color-primary-light, #3d5a8c);
 
-  /* Colors - Accent */
-  --color-gold-600: #b8860b;
-  --color-gold-500: #d4af37;
-  --color-gold-400: #e4c764;
-  --color-gold-300: #f0db93;
+  /* Colors - Accent (theme-aware) */
+  --color-gold-600: var(--color-accent, #b8860b);
+  --color-gold-500: var(--color-accent, #d4af37);
+  --color-gold-400: var(--color-accent-light, #e4c764);
+  --color-gold-300: var(--color-accent-light, #f0db93);
 
-  /* Colors - Neutral */
-  --color-champagne: #f7f3e9;
-  --color-white: #ffffff;
-  --color-off-white: #fafaf9;
+  /* Colors - Neutral (theme-aware) */
+  --color-champagne: var(--color-background-alt, #f7f3e9);
+  --color-white: var(--color-background, #ffffff);
+  --color-off-white: var(--color-background, #fafaf9);
   --color-gray-200: #edf2f7;
-  --color-gray-300: #e2e8f0;
-  --color-gray-400: #cbd5e0;
+  --color-gray-300: var(--color-border, #e2e8f0);
+  --color-gray-400: var(--color-border, #cbd5e0);
   --color-gray-500: #a0aec0;
-  --color-gray-700: #4a5568;
-  --color-gray-800: #2d3748;
-  --color-gray-900: #1a202c;
+  --color-gray-700: var(--color-text-light, #4a5568);
+  --color-gray-800: var(--color-text, #2d3748);
+  --color-gray-900: var(--color-text, #1a202c);
 
   /* Colors - Semantic */
   --color-success: #2f855a;
   --color-error: #c53030;
 
-  /* Typography - Families */
-  --font-heading: 'Cormorant Garamond', serif;
-  --font-body: 'Montserrat', 'Inter', system-ui, -apple-system, sans-serif;
+  /* Typography - Families (theme-aware with Carlton fallbacks) */
+  /* Themes can override, but Carlton's elegant serif/sans defaults remain */
+  --font-heading-base: 'Cormorant Garamond', serif;
+  --font-body-base: 'Montserrat', 'Inter', system-ui, -apple-system, sans-serif;
 
   /* Typography - Scale */
   --font-size-sm: 14px;
@@ -118,23 +121,25 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-body, var(--font-body-base));
   font-size: var(--font-size-base);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-body-weight, var(--font-weight-regular));
   line-height: var(--line-height-relaxed);
   color: var(--color-gray-900);
   background-color: var(--color-white);
+  transition: background-color var(--motion-duration, 0.25s) var(--motion-easing, ease);
 }
 
 /* ============================================
    Typography
    ============================================ */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: var(--font-weight-bold);
+  font-family: var(--font-heading, var(--font-heading-base));
+  font-weight: var(--font-heading-weight, var(--font-weight-bold));
   line-height: var(--line-height-snug);
   letter-spacing: var(--letter-spacing-tight);
   color: var(--color-navy-800);
+  transition: color var(--motion-duration, 0.25s) var(--motion-easing, ease);
 }
 
 h1 {
@@ -189,15 +194,19 @@ a:focus {
 
 .section--white {
   background-color: var(--color-white);
+  transition: background-color var(--motion-duration, 0.25s) var(--motion-easing, ease);
 }
 
 .section--champagne {
   background-color: var(--color-champagne);
+  transition: background-color var(--motion-duration, 0.25s) var(--motion-easing, ease);
 }
 
 .section--navy {
   background-color: var(--color-navy-800);
   color: var(--color-white);
+  transition: background-color var(--motion-duration, 0.25s) var(--motion-easing, ease),
+              color var(--motion-duration, 0.25s) var(--motion-easing, ease);
 }
 
 .section__headline {

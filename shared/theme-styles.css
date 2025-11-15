@@ -1,0 +1,342 @@
+/* =============================================================================
+   Flow Studio - Shared Theme System Styles
+   Reusable theme-aware CSS for all Flow Studio projects
+   ============================================================================= */
+
+/* =============================================================================
+   Theme-Aware CSS Variables (dynamically updated by themes.js)
+   These are the core variables that themes will override
+   ============================================================================= */
+:root {
+  /* Theme colors (updated dynamically by theme switcher) */
+  --color-primary: #475569;
+  --color-primary-light: #64748b;
+  --color-primary-dark: #334155;
+  --color-accent: #2563eb;
+  --color-accent-light: #3b82f6;
+  --color-background: #ffffff;
+  --color-background-alt: #f8fafc;
+  --color-text: #334155;
+  --color-text-light: #64748b;
+  --color-border: #cbd5e1;
+
+  /* Theme typography (updated dynamically) */
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-heading-weight: 600;
+  --font-body-weight: 400;
+
+  /* Theme spacing (updated dynamically) */
+  --spacing-section: 96px;
+  --spacing-card-gap: 24px;
+
+  /* Theme motion (updated dynamically) */
+  --motion-duration: 0.25s;
+  --motion-easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Theme gradient (updated dynamically) */
+  --gradient-hero: linear-gradient(135deg, #475569 0%, #2563eb 100%);
+
+  /* Static spacing scale (not changed by themes) */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+
+  /* Static typography scale */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 30px;
+  --font-size-3xl: 36px;
+  --font-size-4xl: 48px;
+  --font-size-5xl: 60px;
+  --font-size-6xl: 72px;
+  --font-size-7xl: 96px;
+
+  /* Static layout values */
+  --content-max-width: 1280px;
+  --content-narrow-width: 720px;
+  --form-max-width: 480px;
+
+  /* Static border radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* =============================================================================
+   Theme Switcher Component Styles
+   ============================================================================= */
+
+/* Floating toggle button */
+.theme-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background: var(--gradient-hero);
+  color: white;
+  border: none;
+  border-radius: var(--radius-full);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-xl);
+  transition: all var(--motion-duration) var(--motion-easing);
+  font-size: 24px;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1) rotate(90deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle-btn:focus {
+  outline: none;
+  box-shadow: var(--shadow-xl), 0 0 0 3px var(--color-accent-light);
+}
+
+/* Theme switcher panel */
+.theme-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: var(--color-background);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-4);
+  box-shadow: var(--shadow-xl);
+  max-width: 320px;
+  transition: all var(--motion-duration) var(--motion-easing);
+}
+
+.theme-switcher.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+}
+
+.theme-switcher__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-3);
+  padding-bottom: var(--spacing-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.theme-switcher__title {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.theme-switcher__close {
+  background: none;
+  border: none;
+  color: var(--color-text-light);
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+
+.theme-switcher__close:hover {
+  background: var(--color-background-alt);
+  color: var(--color-text);
+}
+
+.theme-switcher__close:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+.theme-switcher__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-2);
+}
+
+/* Theme option buttons */
+.theme-option {
+  padding: var(--spacing-3);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-background);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.theme-option:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.theme-option:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-accent-light);
+}
+
+.theme-option.active {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: white;
+}
+
+.theme-option.active .theme-option__name,
+.theme-option.active .theme-option__desc {
+  color: white;
+}
+
+.theme-option__name {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-1);
+  display: block;
+}
+
+.theme-option__desc {
+  font-size: 11px;
+  color: var(--color-text-light);
+  line-height: 1.4;
+  display: block;
+}
+
+/* Alternative class names for compatibility */
+.theme-selector {
+  /* Uses .theme-switcher styles */
+}
+
+.theme-selector__header {
+  /* Uses .theme-switcher__header styles */
+}
+
+.theme-selector__title {
+  /* Uses .theme-switcher__title styles */
+}
+
+.theme-selector__close {
+  /* Uses .theme-switcher__close styles */
+}
+
+.theme-selector__options {
+  /* Uses .theme-switcher__grid styles */
+}
+
+.theme-option__description {
+  /* Uses .theme-option__desc styles */
+}
+
+/* =============================================================================
+   Common Animations
+   ============================================================================= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Scroll reveal animation (applied via JS) */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s var(--motion-easing);
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* =============================================================================
+   Responsive Utilities
+   ============================================================================= */
+@media (max-width: 768px) {
+  .theme-toggle-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+
+  .theme-switcher {
+    max-width: 280px;
+  }
+
+  .theme-switcher__grid {
+    grid-template-columns: 1fr;
+  }
+}

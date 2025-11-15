@@ -222,26 +222,92 @@ flow-studio/                              (renamed from Flow-Arto)
 
 ---
 
-## Next Development Phase: Multi-Theme Sub-Projects
+## ✅ COMPLETED: Multi-Theme Sub-Projects (2025-11-15)
 
 ### Vision
 Apply the 8-theme system to sub-projects (Carlton Select, future projects) so each example project can showcase multiple design variations.
 
-### Technical Approach
-1. Extract theme system into shared resources (`/shared/themes.js`, `/shared/theme-styles.css`)
-2. Update sub-projects to import shared theme system
-3. Create project-specific theme overrides where needed
-4. Ensure theme switcher works consistently across all projects
-5. Document theme application guide for new projects
+### Implementation Summary
 
-### Benefits
+**Created Shared Theme Infrastructure:**
+1. **`/shared/themes.js`** - 8 theme definitions extracted from root
+2. **`/shared/theme-styles.css`** - Theme-aware CSS variables + switcher UI styles
+3. **`/shared/theme-switcher.js`** - Reusable theme switcher component (auto-injects UI)
+4. **`/shared/THEME_GUIDE.md`** - Comprehensive documentation for applying themes to new projects
+
+**Applied to Carlton Select:**
+- Updated `/web/carlton-select/index.html` to include shared theme resources
+- Refactored `/web/carlton-select/styles.css` to use theme-aware variables
+- Preserved Carlton's luxury brand identity (navy, gold, champagne)
+- Now supports all 8 theme variations while maintaining brand coherence
+
+**Updated Root Landing Page:**
+- Modified `/index.html` to use shared theme resources
+- Removed hardcoded theme switcher HTML (now auto-injected)
+- Simplified theme initialization
+- Kept page-specific scroll reveal animations
+
+### Technical Architecture
+
+**Shared Resource Loading Pattern:**
+```html
+<!-- In any project -->
+<link rel="stylesheet" href="../../shared/theme-styles.css">
+<link rel="stylesheet" href="styles.css"> <!-- Project styles -->
+<script src="../../shared/themes.js"></script>
+<script src="../../shared/theme-switcher.js"></script>
+```
+
+**Theme-Aware CSS Pattern:**
+```css
+:root {
+  /* Map project tokens to theme variables with fallbacks */
+  --color-brand: var(--color-primary, #default);
+  --color-accent: var(--color-accent, #default);
+}
+
+body {
+  font-family: var(--font-body, 'Fallback', sans-serif);
+  background: var(--color-background);
+  transition: background-color var(--motion-duration, 0.25s);
+}
+```
+
+**Theme Switcher Auto-Injection:**
+- `theme-switcher.js` automatically injects theme toggle button + selector panel
+- No manual HTML required
+- Consistent UI across all projects
+- Handles localStorage persistence and keyboard accessibility
+
+### Results Achieved
+✅ 8 themes now work across ALL Flow Studio projects
+✅ Carlton Select demonstrates luxury brand + multi-theme capability
+✅ Shared infrastructure reduces duplication
+✅ Easy to add themes to new projects (see THEME_GUIDE.md)
+✅ Smooth theme transitions with CSS custom properties
+✅ Full accessibility maintained (keyboard nav, ARIA, reduced-motion)
+
+### Benefits Realized
 - **Consistency**: Same 8 themes available across all Flow Studio projects
-- **Client Value**: Show clients multiple design options for their project
-- **Demonstration**: Prove systematic design approach scales across projects
-- **Efficiency**: Reusable theme infrastructure
+- **Client Value**: Carlton Select can now show clients multiple design options
+- **Demonstration**: Proves systematic design approach scales across projects
+- **Efficiency**: Reusable theme infrastructure - add to new projects in 5 minutes
+- **Maintainability**: Single source of truth for themes in `/shared/`
+
+### Files Created/Modified
+**Created:**
+- `/shared/themes.js`
+- `/shared/theme-styles.css`
+- `/shared/theme-switcher.js`
+- `/shared/THEME_GUIDE.md`
+
+**Modified:**
+- `/index.html` - Uses shared theme resources
+- `/web/carlton-select/index.html` - Added theme system
+- `/web/carlton-select/styles.css` - Refactored to be theme-aware
 
 ### Status
-**Planning phase** - to be implemented in next session
+**✅ COMPLETE** - Multi-theme infrastructure fully operational across all projects
 
 ---
 

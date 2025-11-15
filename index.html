@@ -12,59 +12,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
+  <!-- Shared Theme System -->
+  <link rel="stylesheet" href="shared/theme-styles.css">
+
+  <!-- Page Styles -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Theme System -->
-  <script src="themes.js"></script>
+  <!-- Theme System Scripts -->
+  <script src="shared/themes.js"></script>
+  <script src="shared/theme-switcher.js"></script>
 </head>
 <body>
-  <!-- Theme Switcher -->
-  <div class="theme-switcher hidden" id="themeSwitcher" role="dialog" aria-label="Theme selector">
-    <div class="theme-switcher__header">
-      <span class="theme-switcher__title">2025 Styles</span>
-      <button class="theme-switcher__close" onclick="toggleThemeSwitcher()" aria-label="Close theme selector">×</button>
-    </div>
-    <div class="theme-switcher__grid">
-      <button class="theme-option active" data-theme="token-pure" onclick="applyTheme('token-pure')">
-        <span class="theme-option__name">Token Pure</span>
-        <span class="theme-option__desc">Design token system showcase</span>
-      </button>
-      <button class="theme-option" data-theme="scroll-master" onclick="applyTheme('scroll-master')">
-        <span class="theme-option__name">Scroll Master</span>
-        <span class="theme-option__desc">Parallax & scroll-triggered animations</span>
-      </button>
-      <button class="theme-option" data-theme="micro-magic" onclick="applyTheme('micro-magic')">
-        <span class="theme-option__name">Micro Magic</span>
-        <span class="theme-option__desc">Micro-animations & smart interactions</span>
-      </button>
-      <button class="theme-option" data-theme="3d-depth" onclick="applyTheme('3d-depth')">
-        <span class="theme-option__name">3D Depth</span>
-        <span class="theme-option__desc">Floating UI & depth effects</span>
-      </button>
-      <button class="theme-option" data-theme="type-hero" onclick="applyTheme('type-hero')">
-        <span class="theme-option__name">Type Hero</span>
-        <span class="theme-option__desc">Bold, kinetic typography</span>
-      </button>
-      <button class="theme-option" data-theme="grid-artist" onclick="applyTheme('grid-artist')">
-        <span class="theme-option__name">Grid Artist</span>
-        <span class="theme-option__desc">Asymmetric layouts & CSS Grid</span>
-      </button>
-      <button class="theme-option" data-theme="motion-flow" onclick="applyTheme('motion-flow')">
-        <span class="theme-option__name">Motion Flow</span>
-        <span class="theme-option__desc">Smooth animations & spring physics</span>
-      </button>
-      <button class="theme-option" data-theme="dark-vivid" onclick="applyTheme('dark-vivid')">
-        <span class="theme-option__name">Dark Vivid</span>
-        <span class="theme-option__desc">High-contrast dark mode</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- Theme Toggle Button -->
-  <button class="theme-toggle-btn" onclick="toggleThemeSwitcher()" aria-label="Toggle theme selector">
-    🎨
-  </button>
+  <!-- Theme switcher will be injected by theme-switcher.js -->
 
   <!-- Header / Navigation -->
   <header class="header" role="banner">
@@ -406,19 +365,10 @@
     </div>
   </footer>
 
-  <!-- Theme Switcher & Animation Scripts -->
+  <!-- Page-Specific Scripts -->
   <script>
-    // Theme switcher toggle
-    function toggleThemeSwitcher() {
-      const switcher = document.getElementById('themeSwitcher');
-      switcher.classList.toggle('hidden');
-    }
-
-    // Initialize theme on page load
+    // Scroll reveal animation
     document.addEventListener('DOMContentLoaded', function() {
-      initTheme();
-
-      // Scroll reveal animation
       const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -439,26 +389,9 @@
         observer.observe(section);
       });
 
-      // Close theme switcher when clicking outside
-      document.addEventListener('click', function(event) {
-        const switcher = document.getElementById('themeSwitcher');
-        const toggleBtn = document.querySelector('.theme-toggle-btn');
-
-        if (!switcher.contains(event.target) && !toggleBtn.contains(event.target)) {
-          switcher.classList.add('hidden');
-        }
-      });
-
-      // Prevent closing when clicking inside the switcher
-      document.getElementById('themeSwitcher').addEventListener('click', function(event) {
-        event.stopPropagation();
-      });
-    });
-
-    // Keyboard accessibility for theme switcher
-    document.addEventListener('keydown', function(event) {
-      if (event.key === 'Escape') {
-        document.getElementById('themeSwitcher').classList.add('hidden');
+      // Initialize theme system (from shared/themes.js)
+      if (window.initTheme) {
+        window.initTheme();
       }
     });
   </script>
