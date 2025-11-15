@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "name": "Line Creed",
+    "tagline": "Fantastic Golf Adventures Await",
+    "sector": "Fantasy Sports Gaming / Mobile Game",
+    "domain": "linecreed.com",
+    "maturity": "launch",
+    "version": "1.0.0",
+    "lastUpdated": "2025-11-15",
+    "inspiration": "Dragon Ball Z, Pokemon, 90s anime aesthetic, fantasy adventure RPGs"
+  },
+  "voice": {
+    "tone": [
+      "energetic",
+      "adventurous",
+      "playful",
+      "epic",
+      "nostalgic",
+      "confident"
+    ],
+    "style": [
+      "Exclamation points and energy!",
+      "Short, punchy sentences that build momentum",
+      "Action-oriented verbs (power up, unleash, conquer)",
+      "Fantasy/adventure terminology",
+      "Nostalgic 90s anime references done tastefully"
+    ],
+    "phrasesToEmphasize": [
+      "power up",
+      "legendary",
+      "unleash",
+      "epic",
+      "adventure",
+      "collect",
+      "evolve",
+      "master",
+      "championship",
+      "quest"
+    ],
+    "phrasesToAvoid": [
+      "boring golf",
+      "traditional",
+      "serious",
+      "professional sports",
+      "realistic"
+    ],
+    "examples": {
+      "goodHeadline": "Power Up Your Swing! Collect Legendary Clubs and Conquer Fantasy Courses!",
+      "badHeadline": "Professional Golf Simulation for Serious Players",
+      "goodCTA": "Start Your Adventure!",
+      "badCTA": "Sign up now"
+    }
+  },
+  "audience": {
+    "primary": "Nostalgic millennials (25-40) who grew up with DBZ/Pokemon",
+    "secondary": "Mobile gamers who love progression systems and collection",
+    "tertiary": "Casual golf fans looking for something fresh and fun",
+    "painPoints": [
+      "Golf games are too serious and realistic",
+      "Mobile games lack personality and soul",
+      "Missing the energy and excitement of 90s anime",
+      "Want progression and collection, not just simulation"
+    ],
+    "desiredOutcomes": [
+      "Feel that 90s anime energy again",
+      "Collect and upgrade legendary golf equipment",
+      "Progress through fantasy courses like RPG dungeons",
+      "Experience golf as an epic adventure",
+      "Nostalgic fun with modern polish"
+    ],
+    "psychographics": {
+      "values": [
+        "Nostalgia and childhood memories",
+        "Fun over realism",
+        "Progression and achievement",
+        "Bold, unapologetic style",
+        "Community and friendly competition"
+      ],
+      "fears": [
+        "Generic mobile game cash grab",
+        "Losing the magic of 90s anime",
+        "Pay-to-win mechanics",
+        "Forgettable, soulless design"
+      ],
+      "aspirations": [
+        "Relive that Saturday morning anime excitement",
+        "Collect all the legendary clubs (gotta catch 'em all!)",
+        "Become a golf champion in a fantasy world",
+        "Share epic moments with friends"
+      ]
+    }
+  },
+  "emotions": {
+    "shouldFeel": [
+      "excitement",
+      "nostalgia",
+      "power",
+      "adventure",
+      "joy",
+      "accomplishment",
+      "energy"
+    ],
+    "shouldNotFeel": [
+      "boredom",
+      "overwhelmed by complexity",
+      "cynicism about monetization",
+      "confusion"
+    ],
+    "emotionalJourney": {
+      "arrival": "WHOA! This looks like the anime golf game of my dreams!",
+      "engagement": "This is SO fun - I'm actually excited about golf!",
+      "conversion": "I NEED to collect all the legendary clubs!"
+    }
+  },
+  "visual": {
+    "density": "rich-energetic",
+    "mood": [
+      "bold and saturated",
+      "energetic with movement",
+      "nostalgic 90s anime",
+      "fantastical and magical",
+      "optimistic and bright"
+    ],
+    "imagery": [
+      "Anime-style characters with exaggerated expressions",
+      "Energy effects (auras, power lines, speed streaks)",
+      "Fantasy golf courses (floating islands, lava hazards, crystal forests)",
+      "Legendary equipment glowing with power",
+      "Tournament battles with dramatic angles",
+      "Comic-style action panels",
+      "Bright, saturated screenshots of gameplay"
+    ],
+    "avoidImagery": [
+      "Realistic golf photography",
+      "Corporate/serious sports imagery",
+      "Muted, desaturated colors",
+      "Stock photos of golfers"
+    ],
+    "colorTemperature": "warm-vibrant",
+    "contrast": "high-energy",
+    "sophistication": "playful-premium",
+    "motion": {
+      "tolerance": "bold",
+      "style": "anime-inspired"
+    },
+    "references": {
+      "dbz": {
+        "elements": "Energy auras, power-up transformations, bold orange/blue, speed lines, dramatic impact frames",
+        "avoid": "Direct character copying - take the ENERGY, not the IP"
+      },
+      "pokemon": {
+        "elements": "Collection progression, evolution systems, bright optimistic colors, friendly adventure vibe",
+        "avoid": "Copying creature designs - take the COLLECTION EXCITEMENT"
+      },
+      "90sAnime": {
+        "elements": "Bold outlines, saturated colors, dynamic angles, speed lines, comic panels, gradient backgrounds",
+        "modernize": "Clean up the rough edges, higher fidelity, but keep the SOUL"
+      }
+    }
+  },
+  "colorStrategy": {
+    "primary": "Bold orange (DBZ Goku's gi energy)",
+    "accent": "Electric blue (energy blasts, power auras)",
+    "secondary": "Vibrant green (golf courses, nature, growth)",
+    "energy": "Bright yellow/gold (power-ups, legendary items)",
+    "magic": "Purple/magenta (special abilities, rare items)",
+    "philosophy": "Saturated, bold, unapologetic. This is NOT subtle - it's a power fantasy!"
+  },
+  "constraints": {
+    "mustAvoid": [
+      "Muted, desaturated colors (we want ENERGY!)",
+      "Overly serious or realistic aesthetics",
+      "Generic mobile game tropes without personality",
+      "Copyright infringement (inspired by, not copying)",
+      "Dark patterns or predatory monetization visuals"
+    ],
+    "mustRespect": [
+      "WCAG AA minimum for UI text (AAA where possible)",
+      "Nostalgia without being dated - modern execution of 90s energy",
+      "Fast load times despite rich visuals",
+      "Clarity in UI despite bold aesthetics"
+    ],
+    "accessibility": {
+      "minimumStandard": "WCAG AA",
+      "targetStandard": "WCAG AAA for critical UI",
+      "specificRequirements": [
+        "Colorblind-safe palette (don't rely on color alone)",
+        "High contrast mode option for accessibility",
+        "Motion can be reduced without losing personality",
+        "Clear hit states on all interactive elements"
+      ]
+    }
+  },
+  "examples": {
+    "referenceWebsites": [
+      {
+        "url": "https://www.dragonballz.com",
+        "why": "Bold colors, energy, 90s anime aesthetic",
+        "whatToTake": "Color boldness, sense of power and energy",
+        "whatToAvoid": "Don't copy designs - we're not DBZ, we're golf!"
+      },
+      {
+        "url": "https://www.pokemon.com",
+        "why": "Collection excitement, bright optimism, progression",
+        "whatToTake": "Sense of adventure and collection, bright palette",
+        "whatToAvoid": "Cutesy overload - we want epic, not just cute"
+      },
+      {
+        "url": "Modern mobile games with personality",
+        "why": "Polish with soul",
+        "whatToTake": "Clean UI execution with bold personality",
+        "whatToAvoid": "Generic mobile game templates"
+      }
+    ],
+    "visualReferences": [
+      "DBZ: Cell Saga color palette (orange, blue, green)",
+      "Pokemon: Original 151 era bright optimism",
+      "90s trading cards: Holographic effects, bold borders",
+      "Anime opening sequences: Dynamic motion, speed lines"
+    ]
+  },
+  "extensions": {
+    "gameFeatures": {
+      "collection": "Collect legendary clubs with unique abilities (gotta swing 'em all!)",
+      "progression": "Power up your golfer, unlock new courses, evolve equipment",
+      "fantasy": "Magical hazards, power-up items, special abilities",
+      "tournament": "Epic championships against legendary opponents"
+    },
+    "seo": {
+      "tagline": "Fantastic Golf Adventures - Collect Legendary Clubs, Conquer Epic Courses!",
+      "keywordThemes": [
+        "fantasy golf game",
+        "anime golf adventure",
+        "90s nostalgia mobile game",
+        "collect legendary equipment",
+        "epic golf battles"
+      ],
+      "metaDescriptionTemplate": "Line Creed: The fantasy golf adventure inspired by 90s anime! Collect legendary clubs, power up your swing, and conquer epic courses. Golf has never been this EPIC!"
+    },
+    "customFields": {
+      "nostalgiaFactor": "HIGH - Target the exact feeling of Saturday morning DBZ/Pokemon marathons",
+      "energyLevel": "MAXIMUM - Every screen should feel alive and exciting",
+      "fantasyBalance": "80% fantasy adventure, 20% golf simulation",
+      "monetizationPhilosophy": "Generous F2P, premium cosmetics, no pay-to-win"
+    }
+  }
+}

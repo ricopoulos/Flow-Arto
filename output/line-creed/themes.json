@@ -1,0 +1,593 @@
+[
+  {
+    "id": "power-surge",
+    "name": "Power Surge",
+    "description": "The classic DBZ energy! Bold orange and electric blue - FEEL THE POWER! ⚡",
+    "mood": "energetic",
+    "useCase": "Default theme - pure 90s anime energy",
+    "colors": {
+      "primary": "#f97316",
+      "primaryLight": "#fb923c",
+      "primaryDark": "#ea580c",
+      "accent": "#2563eb",
+      "accentLight": "#3b82f6",
+      "accentDark": "#1d4ed8",
+      "success": "#22c55e",
+      "legendary": "#eab308",
+      "background": "#ffffff",
+      "surface": "#fff7ed",
+      "text": "#111827",
+      "textMuted": "#6b7280",
+      "border": "#fed7aa"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fde047 100%)",
+      "card": "linear-gradient(180deg, #fff7ed 0%, #ffffff 100%)"
+    },
+    "fonts": {
+      "heading": "Fredoka",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "700",
+      "bodyWeight": "400"
+    },
+    "effects": {
+      "glow": "0 0 20px rgb(249 115 22 / 0.5)",
+      "shadow": "bold",
+      "borderRadius": "1rem"
+    },
+    "features": ["Gradient backgrounds", "Energy glows", "Bold shadows", "90s anime vibe"]
+  },
+  {
+    "id": "pokemon-adventure",
+    "name": "Pokemon Adventure",
+    "description": "Gotta swing 'em all! Bright, optimistic, collection-focused. Pure adventure! 🌟",
+    "mood": "playful",
+    "useCase": "Collection screens, progression systems, friendly vibes",
+    "colors": {
+      "primary": "#3b82f6",
+      "primaryLight": "#60a5fa",
+      "primaryDark": "#2563eb",
+      "accent": "#eab308",
+      "accentLight": "#fde047",
+      "accentDark": "#ca8a04",
+      "success": "#22c55e",
+      "legendary": "#fde047",
+      "background": "#eff6ff",
+      "surface": "#ffffff",
+      "text": "#1e40af",
+      "textMuted": "#6b7280",
+      "border": "#bfdbfe"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #93c5fd 100%)",
+      "card": "linear-gradient(180deg, #eff6ff 0%, #ffffff 100%)"
+    },
+    "fonts": {
+      "heading": "Fredoka",
+      "body": "Inter",
+      "display": "Fredoka",
+      "headingWeight": "700",
+      "bodyWeight": "400"
+    },
+    "effects": {
+      "glow": "0 0 20px rgb(59 130 246 / 0.4)",
+      "shadow": "md",
+      "borderRadius": "1.5rem"
+    },
+    "features": ["Rounded everything", "Bright optimism", "Soft shadows", "Friendly vibes"]
+  },
+  {
+    "id": "legendary-gold",
+    "name": "Legendary Gold",
+    "description": "MAXIMUM LEGENDARY! Everything shines like a rare holographic card! ✨💎",
+    "mood": "prestigious",
+    "useCase": "Premium features, legendary items, shop, VIP areas",
+    "colors": {
+      "primary": "#eab308",
+      "primaryLight": "#fde047",
+      "primaryDark": "#ca8a04",
+      "accent": "#f97316",
+      "accentLight": "#fb923c",
+      "accentDark": "#ea580c",
+      "success": "#22c55e",
+      "legendary": "#fde047",
+      "background": "#fefce8",
+      "surface": "#ffffff",
+      "text": "#854d0e",
+      "textMuted": "#a16207",
+      "border": "#fef08a"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #eab308 0%, #fde047 50%, #fef08a 100%)",
+      "card": "linear-gradient(180deg, #fefce8 0%, #ffffff 100%)",
+      "shimmer": "linear-gradient(90deg, #fef08a 0%, #fde047 50%, #fef08a 100%)"
+    },
+    "fonts": {
+      "heading": "Fredoka",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "800",
+      "bodyWeight": "500"
+    },
+    "effects": {
+      "glow": "0 0 30px rgb(234 179 8 / 0.6)",
+      "shadow": "xl",
+      "borderRadius": "1rem"
+    },
+    "features": ["Golden shimmer", "Legendary glow", "Premium feel", "Holographic vibes"]
+  },
+  {
+    "id": "dark-tournament",
+    "name": "Dark Tournament",
+    "description": "Enter the arena! Dark background with EXPLOSIVE neon accents! 🌃⚔️",
+    "mood": "intense",
+    "useCase": "PvP battles, tournaments, competitive modes, night mode",
+    "colors": {
+      "primary": "#fb923c",
+      "primaryLight": "#fdba74",
+      "primaryDark": "#f97316",
+      "accent": "#60a5fa",
+      "accentLight": "#93c5fd",
+      "accentDark": "#3b82f6",
+      "success": "#4ade80",
+      "legendary": "#fde047",
+      "background": "#111827",
+      "surface": "#1f2937",
+      "surfaceElevated": "#374151",
+      "text": "#f9fafb",
+      "textMuted": "#9ca3af",
+      "border": "#374151"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #1f2937 0%, #111827 100%)",
+      "accent": "linear-gradient(135deg, #f97316 0%, #fb923c 50%, #60a5fa 100%)"
+    },
+    "fonts": {
+      "heading": "Bebas Neue",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "700",
+      "bodyWeight": "400"
+    },
+    "effects": {
+      "glow": "0 0 25px rgb(251 146 60 / 0.6)",
+      "shadow": "2xl",
+      "borderRadius": "0.75rem"
+    },
+    "features": ["Dark mode", "Neon accents", "Dramatic shadows", "Tournament energy"]
+  },
+  {
+    "id": "mystic-purple",
+    "name": "Mystic Purple",
+    "description": "Unleash MAGIC! Purple power for rare abilities and mystical moments! 🔮✨",
+    "mood": "magical",
+    "useCase": "Special abilities, rare items, magic shop, enchanted courses",
+    "colors": {
+      "primary": "#9333ea",
+      "primaryLight": "#c084fc",
+      "primaryDark": "#7e22ce",
+      "accent": "#3b82f6",
+      "accentLight": "#60a5fa",
+      "accentDark": "#2563eb",
+      "success": "#22c55e",
+      "legendary": "#eab308",
+      "background": "#faf5ff",
+      "surface": "#ffffff",
+      "text": "#581c87",
+      "textMuted": "#7e22ce",
+      "border": "#e9d5ff"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #9333ea 0%, #c084fc 50%, #e9d5ff 100%)",
+      "magic": "linear-gradient(135deg, #7e22ce 0%, #9333ea 50%, #c084fc 100%)"
+    },
+    "fonts": {
+      "heading": "Fredoka",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "700",
+      "bodyWeight": "400"
+    },
+    "effects": {
+      "glow": "0 0 25px rgb(147 51 234 / 0.5)",
+      "shadow": "lg",
+      "borderRadius": "1.5rem"
+    },
+    "features": ["Mystical purple", "Magic glow", "Ethereal feel", "Rare item vibes"]
+  },
+  {
+    "id": "victory-green",
+    "name": "Victory Green",
+    "description": "Natural power! Lush golf courses and victorious moments! 🌿🏆",
+    "mood": "triumphant",
+    "useCase": "Course select, nature themes, victory screens, achievements",
+    "colors": {
+      "primary": "#16a34a",
+      "primaryLight": "#22c55e",
+      "primaryDark": "#15803d",
+      "accent": "#eab308",
+      "accentLight": "#fde047",
+      "accentDark": "#ca8a04",
+      "success": "#4ade80",
+      "legendary": "#fde047",
+      "background": "#f0fdf4",
+      "surface": "#ffffff",
+      "text": "#14532d",
+      "textMuted": "#166534",
+      "border": "#bbf7d0"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #16a34a 0%, #4ade80 50%, #86efac 100%)",
+      "nature": "linear-gradient(180deg, #dcfce7 0%, #f0fdf4 100%)"
+    },
+    "fonts": {
+      "heading": "Fredoka",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "700",
+      "bodyWeight": "400"
+    },
+    "effects": {
+      "glow": "0 0 20px rgb(34 197 94 / 0.5)",
+      "shadow": "md",
+      "borderRadius": "1rem"
+    },
+    "features": ["Nature-inspired", "Victory celebration", "Fresh greens", "Golf course vibe"]
+  },
+  {
+    "id": "sunset-blast",
+    "name": "Sunset Blast",
+    "description": "MAXIMUM POWER-UP! Orange to yellow like a charging energy attack! 🌅⚡",
+    "mood": "powerful",
+    "useCase": "Power-up screens, training mode, level-up moments",
+    "colors": {
+      "primary": "#f97316",
+      "primaryLight": "#fb923c",
+      "primaryDark": "#ea580c",
+      "accent": "#facc15",
+      "accentLight": "#fde047",
+      "accentDark": "#eab308",
+      "success": "#22c55e",
+      "legendary": "#fde047",
+      "background": "#fff7ed",
+      "surface": "#ffffff",
+      "text": "#7c2d12",
+      "textMuted": "#c2410c",
+      "border": "#fed7aa"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #ea580c 0%, #f97316 25%, #fb923c 50%, #fdba74 75%, #fde047 100%)",
+      "power": "linear-gradient(90deg, #f97316 0%, #fde047 100%)"
+    },
+    "fonts": {
+      "heading": "Bebas Neue",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "900",
+      "bodyWeight": "500"
+    },
+    "effects": {
+      "glow": "0 0 30px rgb(249 115 22 / 0.7)",
+      "shadow": "2xl",
+      "borderRadius": "0.5rem"
+    },
+    "features": ["Power-up gradient", "Energy aura", "Dramatic glow", "Transformation vibe"]
+  },
+  {
+    "id": "electric-storm",
+    "name": "Electric Storm",
+    "description": "KAMEHAMEHA! Pure blue energy blast theme! Crackling with power! ⚡💙",
+    "mood": "energetic",
+    "useCase": "Energy attacks, special abilities, electric courses",
+    "colors": {
+      "primary": "#2563eb",
+      "primaryLight": "#3b82f6",
+      "primaryDark": "#1d4ed8",
+      "accent": "#06b6d4",
+      "accentLight": "#22d3ee",
+      "accentDark": "#0891b2",
+      "success": "#22c55e",
+      "legendary": "#fde047",
+      "background": "#eff6ff",
+      "surface": "#ffffff",
+      "text": "#1e3a8a",
+      "textMuted": "#1e40af",
+      "border": "#bfdbfe"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #1d4ed8 0%, #2563eb 25%, #3b82f6 50%, #60a5fa 75%, #93c5fd 100%)",
+      "energy": "linear-gradient(90deg, #2563eb 0%, #06b6d4 100%)"
+    },
+    "fonts": {
+      "heading": "Bebas Neue",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "900",
+      "bodyWeight": "400"
+    },
+    "effects": {
+      "glow": "0 0 25px rgb(37 99 235 / 0.7)",
+      "shadow": "xl",
+      "borderRadius": "0.75rem"
+    },
+    "features": ["Electric blue", "Energy blast", "Crackling effects", "Power attack"]
+  },
+  {
+    "id": "comic-book",
+    "name": "Comic Book",
+    "description": "POW! BAM! Bold outlines and flat colors like a manga panel! 📚💥",
+    "mood": "bold",
+    "useCase": "Story mode, comic-style cutscenes, achievements",
+    "colors": {
+      "primary": "#dc2626",
+      "primaryLight": "#ef4444",
+      "primaryDark": "#b91c1c",
+      "accent": "#2563eb",
+      "accentLight": "#3b82f6",
+      "accentDark": "#1d4ed8",
+      "success": "#16a34a",
+      "legendary": "#eab308",
+      "background": "#ffffff",
+      "surface": "#fef2f2",
+      "text": "#111827",
+      "textMuted": "#4b5563",
+      "border": "#111827"
+    },
+    "gradients": {
+      "none": "Flat colors only - true comic style!"
+    },
+    "fonts": {
+      "heading": "Bebas Neue",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "900",
+      "bodyWeight": "600"
+    },
+    "effects": {
+      "glow": "none",
+      "shadow": "none",
+      "borderRadius": "0.25rem",
+      "border": "4px solid #111827"
+    },
+    "features": ["Bold borders", "Flat colors", "No gradients", "Manga aesthetic"]
+  },
+  {
+    "id": "holographic-rare",
+    "name": "Holographic Rare",
+    "description": "Shimmer like a 90s holographic trading card! Ultra rare! 🌈✨",
+    "mood": "rare",
+    "useCase": "Legendary pulls, rare item reveals, collection showcase",
+    "colors": {
+      "primary": "#c084fc",
+      "primaryLight": "#d8b4fe",
+      "primaryDark": "#a855f7",
+      "accent": "#60a5fa",
+      "accentLight": "#93c5fd",
+      "accentDark": "#3b82f6",
+      "success": "#4ade80",
+      "legendary": "#fde047",
+      "background": "#faf5ff",
+      "surface": "#ffffff",
+      "text": "#581c87",
+      "textMuted": "#7e22ce",
+      "border": "#e9d5ff"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #c084fc 0%, #60a5fa 25%, #4ade80 50%, #fde047 75%, #fb923c 100%)",
+      "shimmer": "linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.6) 50%, transparent 100%)"
+    },
+    "fonts": {
+      "heading": "Fredoka",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "800",
+      "bodyWeight": "400"
+    },
+    "effects": {
+      "glow": "0 0 30px rgb(192 132 252 / 0.5)",
+      "shadow": "xl",
+      "borderRadius": "1rem",
+      "shimmer": "Animated rainbow gradient overlay"
+    },
+    "features": ["Rainbow gradients", "Holographic shimmer", "Ultra rare feel", "Trading card vibe"]
+  },
+  {
+    "id": "power-level-max",
+    "name": "Power Level MAX",
+    "description": "OVER 9000!!! Everything turned up to MAXIMUM! Pure chaos! 🔥💥",
+    "mood": "extreme",
+    "useCase": "Max level content, ultimate abilities, final boss fights",
+    "colors": {
+      "primary": "#dc2626",
+      "primaryLight": "#ef4444",
+      "primaryDark": "#991b1b",
+      "accent": "#facc15",
+      "accentLight": "#fde047",
+      "accentDark": "#eab308",
+      "success": "#22c55e",
+      "legendary": "#fde047",
+      "background": "#7f1d1d",
+      "surface": "#991b1b",
+      "surfaceElevated": "#b91c1c",
+      "text": "#fef2f2",
+      "textMuted": "#fecaca",
+      "border": "#ef4444"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #dc2626 0%, #f97316 33%, #facc15 66%, #fde047 100%)",
+      "explosion": "radial-gradient(circle, #facc15 0%, #f97316 50%, #dc2626 100%)"
+    },
+    "fonts": {
+      "heading": "Bebas Neue",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "900",
+      "bodyWeight": "700"
+    },
+    "effects": {
+      "glow": "0 0 40px rgb(251 146 60 / 0.9)",
+      "shadow": "2xl",
+      "borderRadius": "0.5rem"
+    },
+    "features": ["MAXIMUM energy", "Explosive colors", "Dramatic dark bg", "Ultimate power"]
+  },
+  {
+    "id": "forest-quest",
+    "name": "Forest Quest",
+    "description": "Adventure through enchanted forests! Natural fantasy vibes! 🌲🗺️",
+    "mood": "adventurous",
+    "useCase": "Forest courses, nature themes, exploration mode",
+    "colors": {
+      "primary": "#15803d",
+      "primaryLight": "#16a34a",
+      "primaryDark": "#14532d",
+      "accent": "#854d0e",
+      "accentLight": "#a16207",
+      "accentDark": "#713f12",
+      "success": "#22c55e",
+      "legendary": "#eab308",
+      "background": "#f0fdf4",
+      "surface": "#ffffff",
+      "text": "#14532d",
+      "textMuted": "#166534",
+      "border": "#86efac"
+    },
+    "gradients": {
+      "hero": "linear-gradient(180deg, #22c55e 0%, #16a34a 50%, #15803d 100%)",
+      "forest": "linear-gradient(135deg, #15803d 0%, #16a34a 100%)"
+    },
+    "fonts": {
+      "heading": "Fredoka",
+      "body": "Inter",
+      "display": "Fredoka",
+      "headingWeight": "700",
+      "bodyWeight": "400"
+    },
+    "effects": {
+      "glow": "0 0 15px rgb(34 197 94 / 0.4)",
+      "shadow": "md",
+      "borderRadius": "1.5rem"
+    },
+    "features": ["Forest greens", "Natural browns", "Adventure feel", "Quest aesthetic"]
+  },
+  {
+    "id": "cosmic-championship",
+    "name": "Cosmic Championship",
+    "description": "Golf among the stars! Galaxy tournament energy! 🌌🏆",
+    "mood": "cosmic",
+    "useCase": "Space courses, championship mode, cosmic themes",
+    "colors": {
+      "primary": "#6b21a8",
+      "primaryLight": "#7e22ce",
+      "primaryDark": "#581c87",
+      "accent": "#2563eb",
+      "accentLight": "#3b82f6",
+      "accentDark": "#1d4ed8",
+      "success": "#22c55e",
+      "legendary": "#eab308",
+      "background": "#1e1b4b",
+      "surface": "#312e81",
+      "surfaceElevated": "#3730a3",
+      "text": "#e0e7ff",
+      "textMuted": "#a5b4fc",
+      "border": "#4f46e5"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #3730a3 100%)",
+      "cosmic": "radial-gradient(circle at 30% 50%, #7e22ce 0%, #2563eb 50%, #1e1b4b 100%)"
+    },
+    "fonts": {
+      "heading": "Bebas Neue",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "900",
+      "bodyWeight": "400"
+    },
+    "effects": {
+      "glow": "0 0 30px rgb(107 33 168 / 0.6)",
+      "shadow": "2xl",
+      "borderRadius": "0.75rem"
+    },
+    "features": ["Galaxy background", "Cosmic purple", "Star effects", "Championship feel"]
+  },
+  {
+    "id": "retro-arcade",
+    "name": "Retro Arcade",
+    "description": "90s arcade energy! Bright neon and pixel-perfect vibes! 🕹️💫",
+    "mood": "retro",
+    "useCase": "Arcade mode, retro challenges, nostalgic content",
+    "colors": {
+      "primary": "#ec4899",
+      "primaryLight": "#f472b6",
+      "primaryDark": "#db2777",
+      "accent": "#06b6d4",
+      "accentLight": "#22d3ee",
+      "accentDark": "#0891b2",
+      "success": "#10b981",
+      "legendary": "#fbbf24",
+      "background": "#1f2937",
+      "surface": "#374151",
+      "surfaceElevated": "#4b5563",
+      "text": "#f9fafb",
+      "textMuted": "#d1d5db",
+      "border": "#6b7280"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #ec4899 0%, #f472b6 33%, #06b6d4 66%, #22d3ee 100%)",
+      "neon": "linear-gradient(90deg, #ec4899 0%, #06b6d4 100%)"
+    },
+    "fonts": {
+      "heading": "Bebas Neue",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "900",
+      "bodyWeight": "600"
+    },
+    "effects": {
+      "glow": "0 0 25px rgb(236 72 153 / 0.8)",
+      "shadow": "lg",
+      "borderRadius": "0.25rem"
+    },
+    "features": ["Neon pink/cyan", "Arcade aesthetic", "Retro gaming", "90s nostalgia"]
+  },
+  {
+    "id": "championship-gold",
+    "name": "Championship Gold",
+    "description": "YOU'RE THE CHAMPION! Pure gold victory celebration! 🏆👑",
+    "mood": "victorious",
+    "useCase": "Victory screens, leaderboards, tournament wins, achievements",
+    "colors": {
+      "primary": "#ca8a04",
+      "primaryLight": "#eab308",
+      "primaryDark": "#a16207",
+      "accent": "#f97316",
+      "accentLight": "#fb923c",
+      "accentDark": "#ea580c",
+      "success": "#22c55e",
+      "legendary": "#fde047",
+      "background": "#fffbeb",
+      "surface": "#ffffff",
+      "text": "#713f12",
+      "textMuted": "#a16207",
+      "border": "#fde68a"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #fef3c7 0%, #fde68a 25%, #fde047 50%, #facc15 75%, #eab308 100%)",
+      "trophy": "radial-gradient(circle, #fde047 0%, #eab308 50%, #ca8a04 100%)"
+    },
+    "fonts": {
+      "heading": "Bebas Neue",
+      "body": "Inter",
+      "display": "Bebas Neue",
+      "headingWeight": "900",
+      "bodyWeight": "600"
+    },
+    "effects": {
+      "glow": "0 0 35px rgb(234 179 8 / 0.8)",
+      "shadow": "2xl",
+      "borderRadius": "1rem"
+    },
+    "features": ["Pure gold", "Trophy shimmer", "Victory celebration", "Champion energy"]
+  }
+]

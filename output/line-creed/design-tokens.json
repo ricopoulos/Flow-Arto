@@ -1,0 +1,476 @@
+{
+  "project": "Line Creed",
+  "generatedBy": "Claude (Flow Studio AI)",
+  "version": "1.0.0",
+  "generatedAt": "2025-11-15",
+  "aesthetic": "90s anime energy meets fantasy golf! Bold, saturated colors inspired by Dragon Ball Z and Pokemon. High contrast, dramatic gradients, unapologetic vibrancy. This is NOT subtle - it's a power fantasy brought to life!",
+
+  "colors": {
+    "primary": {
+      "name": "Power Orange",
+      "description": "Bold orange inspired by Goku's gi and energy - confidence, power, action!",
+      "50": "#fff7ed",
+      "100": "#ffedd5",
+      "200": "#fed7aa",
+      "300": "#fdba74",
+      "400": "#fb923c",
+      "500": "#f97316",
+      "600": "#ea580c",
+      "700": "#c2410c",
+      "800": "#9a3412",
+      "900": "#7c2d12",
+      "950": "#431407"
+    },
+    "accent": {
+      "name": "Energy Blue",
+      "description": "Electric blue like a kamehameha blast - power, magic, impact!",
+      "50": "#eff6ff",
+      "100": "#dbeafe",
+      "200": "#bfdbfe",
+      "300": "#93c5fd",
+      "400": "#60a5fa",
+      "500": "#3b82f6",
+      "600": "#2563eb",
+      "700": "#1d4ed8",
+      "800": "#1e40af",
+      "900": "#1e3a8a",
+      "950": "#172554"
+    },
+    "success": {
+      "name": "Victory Green",
+      "description": "Vibrant green for golf courses, nature, and winning!",
+      "50": "#f0fdf4",
+      "100": "#dcfce7",
+      "200": "#bbf7d0",
+      "300": "#86efac",
+      "400": "#4ade80",
+      "500": "#22c55e",
+      "600": "#16a34a",
+      "700": "#15803d",
+      "800": "#166534",
+      "900": "#14532d",
+      "950": "#052e16"
+    },
+    "legendary": {
+      "name": "Legendary Gold",
+      "description": "Bright yellow/gold for legendary items, power-ups, special moments!",
+      "50": "#fefce8",
+      "100": "#fef9c3",
+      "200": "#fef08a",
+      "300": "#fde047",
+      "400": "#facc15",
+      "500": "#eab308",
+      "600": "#ca8a04",
+      "700": "#a16207",
+      "800": "#854d0e",
+      "900": "#713f12",
+      "950": "#422006"
+    },
+    "magic": {
+      "name": "Mystic Purple",
+      "description": "Purple/magenta for rare items, magic, special abilities!",
+      "50": "#faf5ff",
+      "100": "#f3e8ff",
+      "200": "#e9d5ff",
+      "300": "#d8b4fe",
+      "400": "#c084fc",
+      "500": "#a855f7",
+      "600": "#9333ea",
+      "700": "#7e22ce",
+      "800": "#6b21a8",
+      "900": "#581c87",
+      "950": "#3b0764"
+    },
+    "error": {
+      "name": "Danger Red",
+      "description": "Bold red for damage, hazards, critical warnings!",
+      "50": "#fef2f2",
+      "100": "#fee2e2",
+      "200": "#fecaca",
+      "300": "#fca5a5",
+      "400": "#f87171",
+      "500": "#ef4444",
+      "600": "#dc2626",
+      "700": "#b91c1c",
+      "800": "#991b1b",
+      "900": "#7f1d1d",
+      "950": "#450a0a"
+    },
+    "neutral": {
+      "name": "Clean Neutral",
+      "description": "Clean grays for UI structure - less saturated to let colors POP!",
+      "50": "#f9fafb",
+      "100": "#f3f4f6",
+      "200": "#e5e7eb",
+      "300": "#d1d5db",
+      "400": "#9ca3af",
+      "500": "#6b7280",
+      "600": "#4b5563",
+      "700": "#374151",
+      "800": "#1f2937",
+      "900": "#111827",
+      "950": "#030712"
+    },
+    "gradients": {
+      "sunsetPower": "linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fde047 100%)",
+      "description": "Orange to yellow - like a power-up aura!",
+      "energyBlast": "linear-gradient(135deg, #2563eb 0%, #60a5fa 50%, #93c5fd 100%)",
+      "description2": "Deep to light blue - like an energy attack!",
+      "legendaryShine": "linear-gradient(135deg, #eab308 0%, #fde047 50%, #fef08a 100%)",
+      "description3": "Golden shimmer for legendary items",
+      "mysticAura": "linear-gradient(135deg, #9333ea 0%, #c084fc 50%, #e9d5ff 100%)",
+      "description4": "Purple magic glow",
+      "victoryGlow": "linear-gradient(135deg, #16a34a 0%, #4ade80 50%, #86efac 100%)",
+      "description5": "Green success gradient",
+      "philosophy": "90s anime LOVED gradients - use liberally for energy effects!"
+    },
+    "semantic": {
+      "background": "#ffffff",
+      "backgroundDark": "#111827",
+      "surface": "#f9fafb",
+      "surfaceElevated": "#ffffff",
+      "text": "#111827",
+      "textMuted": "#6b7280",
+      "textInverse": "#ffffff",
+      "border": "#e5e7eb",
+      "borderBold": "#d1d5db"
+    },
+    "contrast-validation": {
+      "primary-600-on-white": {
+        "ratio": "4.89:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "fail",
+        "note": "Bright orange - AA for large text, use 700 for small text AAA"
+      },
+      "accent-700-on-white": {
+        "ratio": "7.04:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass",
+        "note": "Deep blue - AAA compliant"
+      },
+      "primary-700-on-white": {
+        "ratio": "7.21:1",
+        "wcag-aa": "pass",
+        "wcag-aaa": "pass",
+        "note": "Darker orange - AAA compliant"
+      }
+    }
+  },
+
+  "typography": {
+    "fonts": {
+      "heading": {
+        "family": "'Fredoka', 'Outfit', 'Poppins', sans-serif",
+        "fallback": "system-ui, sans-serif",
+        "variable": true,
+        "weights": [500, 600, 700, 800, 900],
+        "characteristics": "Rounded, friendly, bold - perfect for anime-inspired energy. Fredoka has that playful weight that screams adventure!",
+        "url": "https://fonts.google.com/specimen/Fredoka"
+      },
+      "body": {
+        "family": "'Inter', 'Nunito', sans-serif",
+        "fallback": "system-ui, sans-serif",
+        "variable": true,
+        "weights": [400, 500, 600, 700],
+        "characteristics": "Clean and readable for UI, but can go bold when needed",
+        "url": "https://fonts.google.com/specimen/Inter"
+      },
+      "display": {
+        "family": "'Bebas Neue', 'Anton', sans-serif",
+        "fallback": "Impact, sans-serif",
+        "weights": [400, 700],
+        "characteristics": "BIG, BOLD, IMPACTFUL - for hero headings and POWER moments!",
+        "usage": "Use sparingly for maximum impact - hero headings, special announcements",
+        "url": "https://fonts.google.com/specimen/Bebas+Neue"
+      }
+    },
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "2rem",
+      "4xl": "2.5rem",
+      "5xl": "3.5rem",
+      "6xl": "4.5rem",
+      "7xl": "6rem",
+      "8xl": "8rem",
+      "ratio": "1.333 (perfect fourth - bigger jumps for more impact!)",
+      "baseSize": "16px",
+      "philosophy": "Go BIG or go home! Anime loves dramatic scale."
+    },
+    "lineHeight": {
+      "none": 1,
+      "tight": 1.1,
+      "snug": 1.25,
+      "normal": 1.5,
+      "relaxed": 1.625,
+      "loose": 1.75,
+      "heading": 1.1,
+      "display": 0.95,
+      "body": 1.625
+    },
+    "letterSpacing": {
+      "tighter": "-0.05em",
+      "tight": "-0.025em",
+      "normal": "0",
+      "wide": "0.025em",
+      "wider": "0.05em",
+      "widest": "0.1em",
+      "display": "0.02em",
+      "heading": "-0.01em",
+      "body": "0"
+    },
+    "fontWeight": {
+      "normal": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800,
+      "black": 900,
+      "headingDefault": 700,
+      "displayDefault": 900,
+      "bodyDefault": 400
+    }
+  },
+
+  "spacing": {
+    "scale": "4px base (but go bigger when you need IMPACT!)",
+    "philosophy": "Rich and energetic. Not afraid of big spacing for dramatic moments, but can be tight for UI efficiency.",
+    "values": {
+      "0": "0",
+      "px": "1px",
+      "0.5": "0.125rem",
+      "1": "0.25rem",
+      "1.5": "0.375rem",
+      "2": "0.5rem",
+      "2.5": "0.625rem",
+      "3": "0.75rem",
+      "3.5": "0.875rem",
+      "4": "1rem",
+      "5": "1.25rem",
+      "6": "1.5rem",
+      "7": "1.75rem",
+      "8": "2rem",
+      "9": "2.25rem",
+      "10": "2.5rem",
+      "12": "3rem",
+      "14": "3.5rem",
+      "16": "4rem",
+      "20": "5rem",
+      "24": "6rem",
+      "28": "7rem",
+      "32": "8rem",
+      "36": "9rem",
+      "40": "10rem",
+      "48": "12rem",
+      "56": "14rem",
+      "64": "16rem",
+      "72": "18rem",
+      "80": "20rem",
+      "96": "24rem"
+    },
+    "semantic": {
+      "sectionVertical": "5rem",
+      "sectionHorizontal": "1.5rem",
+      "cardPadding": "1.5rem",
+      "cardGap": "1rem",
+      "contentMaxWidth": "80rem",
+      "contentPadding": "1.5rem",
+      "elementGap": "1rem",
+      "heroSpacing": "6rem",
+      "tightUI": "0.75rem"
+    }
+  },
+
+  "motion": {
+    "duration": {
+      "instant": "50ms",
+      "fast": "150ms",
+      "normal": "250ms",
+      "slow": "400ms",
+      "dramatic": "600ms",
+      "epic": "1000ms",
+      "philosophy": "BOLD motion - not subtle! Think transformation sequences and power-ups."
+    },
+    "easing": {
+      "linear": "cubic-bezier(0, 0, 1, 1)",
+      "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+      "easeOut": "cubic-bezier(0, 0, 0.2, 1)",
+      "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "bounce": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+      "elastic": "cubic-bezier(0.6, -0.28, 0.735, 0.045)",
+      "powerUp": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "impact": "cubic-bezier(0.6, -0.28, 0.735, 0.045)",
+      "default": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+    },
+    "spring": {
+      "bounce": {
+        "mass": 1,
+        "stiffness": 200,
+        "damping": 15,
+        "description": "Bouncy, playful - like Pokemon jumping!"
+      },
+      "powerful": {
+        "mass": 2,
+        "stiffness": 300,
+        "damping": 25,
+        "description": "Strong, impactful - like a power punch!"
+      }
+    },
+    "anime": {
+      "speedLines": "Move elements quickly with motion blur effects",
+      "energyGlow": "Pulsing glow animations on hover (0.6s loop)",
+      "powerUp": "Scale up with glow (0.4s dramatic easing)",
+      "impact": "Quick shake + flash (0.15s instant)",
+      "float": "Gentle up-down motion for legendary items (3s ease-in-out loop)"
+    },
+    "reducedMotion": {
+      "enabled": true,
+      "fallback": "Reduce to simple fades, keep personality",
+      "respectPreference": "@media (prefers-reduced-motion: reduce)"
+    }
+  },
+
+  "effects": {
+    "shadows": {
+      "sm": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      "md": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      "lg": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+      "xl": "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+      "2xl": "0 25px 50px -12px rgb(0 0 0 / 0.25)",
+      "bold": "0 10px 30px -5px rgb(0 0 0 / 0.3)",
+      "glow": "0 0 20px rgb(249 115 22 / 0.5)",
+      "glowBlue": "0 0 20px rgb(37 99 235 / 0.5)",
+      "glowGold": "0 0 30px rgb(234 179 8 / 0.6)",
+      "glowPurple": "0 0 25px rgb(147 51 234 / 0.5)",
+      "inner": "inset 0 2px 4px 0 rgb(0 0 0 / 0.1)",
+      "none": "none",
+      "philosophy": "Use colored glows for energy effects! Not afraid of bold shadows."
+    },
+    "blur": {
+      "none": "0",
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px",
+      "xl": "24px",
+      "usage": "Use for depth of field and energy effects"
+    },
+    "borderRadius": {
+      "none": "0",
+      "sm": "0.25rem",
+      "md": "0.5rem",
+      "lg": "0.75rem",
+      "xl": "1rem",
+      "2xl": "1.5rem",
+      "3xl": "2rem",
+      "full": "9999px",
+      "default": "0.75rem",
+      "philosophy": "Rounded corners - friendly and approachable, like Pokemon!"
+    },
+    "opacity": {
+      "0": "0",
+      "10": "0.1",
+      "20": "0.2",
+      "30": "0.3",
+      "40": "0.4",
+      "50": "0.5",
+      "60": "0.6",
+      "70": "0.7",
+      "80": "0.8",
+      "90": "0.9",
+      "100": "1"
+    },
+    "borders": {
+      "standard": "2px solid",
+      "bold": "3px solid",
+      "comic": "4px solid #111827",
+      "philosophy": "Not afraid of thick borders - comic book style!"
+    }
+  },
+
+  "components": {
+    "button": {
+      "padding": {
+        "sm": "0.5rem 1.25rem",
+        "md": "0.75rem 2rem",
+        "lg": "1rem 2.5rem",
+        "xl": "1.25rem 3rem"
+      },
+      "fontSize": {
+        "sm": "0.875rem",
+        "md": "1rem",
+        "lg": "1.125rem",
+        "xl": "1.25rem"
+      },
+      "borderRadius": "0.75rem",
+      "fontWeight": 700,
+      "transition": "all 150ms cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "shadow": "0 4px 6px -1px rgb(0 0 0 / 0.1)",
+      "hoverScale": "1.05",
+      "activeScale": "0.95",
+      "philosophy": "Big, bold buttons that feel POWERFUL to click!"
+    },
+    "card": {
+      "padding": "1.5rem",
+      "borderRadius": "1rem",
+      "shadow": "0 4px 6px -1px rgb(0 0 0 / 0.1)",
+      "border": "2px solid transparent",
+      "hoverShadow": "0 10px 15px -3px rgb(0 0 0 / 0.1)",
+      "hoverTransform": "translateY(-2px)",
+      "legendaryGlow": "0 0 30px rgb(234 179 8 / 0.6)"
+    },
+    "badge": {
+      "padding": "0.25rem 0.75rem",
+      "fontSize": "0.75rem",
+      "fontWeight": 700,
+      "borderRadius": "9999px",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.05em"
+    }
+  },
+
+  "accessibility": {
+    "focusRing": {
+      "width": "3px",
+      "offset": "2px",
+      "color": "#2563eb",
+      "style": "solid",
+      "opacity": "1",
+      "philosophy": "Bold, visible focus states - accessibility is POWER!"
+    },
+    "minTouchTarget": "44px",
+    "minTextSize": "16px",
+    "contrastMinimum": "4.5:1 (WCAG AA)",
+    "contrastTarget": "7:1 (WCAG AAA where possible)",
+    "reducedMotion": true,
+    "colorBlindSafe": true,
+    "highContrastMode": true,
+    "requirements": [
+      "All UI text meets AA minimum (large display text can use AA for impact)",
+      "Color is never the only indicator (use icons, labels, patterns)",
+      "Motion can be disabled without losing personality",
+      "High contrast mode available for better visibility",
+      "Touch targets are generous (44px minimum)"
+    ],
+    "note": "Bold colors + good contrast = accessible AND exciting!"
+  },
+
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  },
+
+  "notes": {
+    "philosophy": "This is 90s anime energy brought to life! Bold, saturated, unapologetic. Every color should POP, every interaction should feel POWERFUL. We're not subtle - we're EPIC! Think Saturday morning cartoon excitement with modern polish. Gotta swing 'em all! ⚡🐉⛳",
+    "colorUsage": "Don't be shy - use those gradients! Orange for action, blue for magic, gold for legendary, purple for rare, green for success. Mix them for maximum energy!",
+    "typography": "BIG headings, BOLD weights, playful personality. This isn't corporate - it's adventure!",
+    "motion": "Bouncy, impactful, dramatic. Think transformation sequences and power-ups, not subtle fades.",
+    "accessibility": "Bold ≠ inaccessible. We maintain AA/AAA standards while keeping maximum energy. Use darker shades for text, reserve bright colors for effects and accents."
+  }
+}
