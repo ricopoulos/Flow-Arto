@@ -3,275 +3,464 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flow Studio Preview Hub</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <meta name="description" content="Flow Studio: Build brand-coherent web experiences with AI agents that understand design systems, tokens, and your unique brand voice.">
+  <meta name="keywords" content="AI design system, brand-aware web design, systematic design tools, design token automation, composable web components">
+  <title>Flow Studio - AI Design Agents That Understand Your Brand</title>
 
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      color: #1f2937;
-      background: #f9fafb;
-      padding: 40px 20px;
-    }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
 
-    header {
-      margin-bottom: 48px;
-    }
-
-    h1 {
-      font-size: 32px;
-      font-weight: 700;
-      color: #111827;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      font-size: 16px;
-      color: #6b7280;
-    }
-
-    .projects {
-      display: grid;
-      gap: 24px;
-    }
-
-    .project-card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      padding: 24px;
-      transition: box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-
-    .project-card:hover {
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-      border-color: #d1d5db;
-    }
-
-    .project-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 12px;
-    }
-
-    .project-title {
-      font-size: 20px;
-      font-weight: 600;
-      color: #111827;
-      margin-bottom: 4px;
-    }
-
-    .project-status {
-      display: inline-block;
-      padding: 4px 12px;
-      font-size: 12px;
-      font-weight: 500;
-      border-radius: 12px;
-      white-space: nowrap;
-    }
-
-    .status-dev {
-      background: #dbeafe;
-      color: #1e40af;
-    }
-
-    .status-testing {
-      background: #fef3c7;
-      color: #92400e;
-    }
-
-    .project-description {
-      font-size: 14px;
-      color: #6b7280;
-      margin-bottom: 16px;
-      line-height: 1.5;
-    }
-
-    .project-meta {
-      display: flex;
-      gap: 16px;
-      font-size: 13px;
-      color: #9ca3af;
-      margin-bottom: 16px;
-    }
-
-    .project-meta span {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    .project-links {
-      display: flex;
-      gap: 12px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      padding: 8px 16px;
-      font-size: 14px;
-      font-weight: 500;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: all 0.2s ease;
-    }
-
-    .btn-primary {
-      background: #2563eb;
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: #1d4ed8;
-    }
-
-    .btn-secondary {
-      background: white;
-      color: #374151;
-      border: 1px solid #d1d5db;
-    }
-
-    .btn-secondary:hover {
-      background: #f9fafb;
-      border-color: #9ca3af;
-    }
-
-    footer {
-      margin-top: 48px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-      text-align: center;
-      font-size: 14px;
-      color: #9ca3af;
-    }
-
-    .info-box {
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 32px;
-      font-size: 14px;
-      color: #1e40af;
-    }
-
-    .info-box strong {
-      font-weight: 600;
-    }
-
-    @media (max-width: 640px) {
-      .project-header {
-        flex-direction: column;
-        gap: 8px;
-      }
-
-      .project-links {
-        flex-direction: column;
-      }
-
-      .btn {
-        text-align: center;
-        justify-content: center;
-      }
-    }
-  </style>
+  <!-- Theme System -->
+  <script src="themes.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Flow Studio Preview Hub</h1>
-      <p class="subtitle">Development previews for ongoing projects</p>
-    </header>
-
-    <div class="info-box">
-      <strong>Preview Environment:</strong> This page provides easy access to preview ongoing work. Each project below is in active development.
+  <!-- Theme Switcher -->
+  <div class="theme-switcher hidden" id="themeSwitcher" role="dialog" aria-label="Theme selector">
+    <div class="theme-switcher__header">
+      <span class="theme-switcher__title">2025 Styles</span>
+      <button class="theme-switcher__close" onclick="toggleThemeSwitcher()" aria-label="Close theme selector">×</button>
     </div>
-
-    <div class="projects">
-      <!-- Carlton Select -->
-      <div class="project-card">
-        <div class="project-header">
-          <div>
-            <h2 class="project-title">Carlton Select</h2>
-          </div>
-          <span class="project-status status-testing">Testing</span>
-        </div>
-
-        <p class="project-description">
-          Exclusive membership-based service for curated Miami foreclosure opportunities.
-          Micro-landing page with luxury real estate aesthetic (navy, gold, champagne palette).
-        </p>
-
-        <div class="project-meta">
-          <span>🎨 Brand: Luxury Real Estate</span>
-          <span>📅 Created: Nov 2025</span>
-        </div>
-
-        <div class="project-links">
-          <a href="/flow-studio/web/carlton-select/" class="btn btn-primary">View Preview</a>
-          <a href="https://github.com/ricopoulos/flow-studio/tree/main/web/carlton-select" class="btn btn-secondary" target="_blank">View Code</a>
-        </div>
-      </div>
-
-      <!-- Flow Studio -->
-      <div class="project-card">
-        <div class="project-header">
-          <div>
-            <h2 class="project-title">Flow Studio</h2>
-          </div>
-          <span class="project-status status-dev">In Development</span>
-        </div>
-
-        <p class="project-description">
-          AI design agents platform landing page. Demonstrates the complete Flow Studio design system:
-          token-driven, brand-aware, systematic approach. Features Arto, Stylist, Builder, Curator, and Maestro agents.
-        </p>
-
-        <div class="project-meta">
-          <span>🎨 Brand: Technical Elegance</span>
-          <span>📅 Created: Nov 2025</span>
-        </div>
-
-        <div class="project-links">
-          <a href="/flow-studio/web/flow-studio/" class="btn btn-primary">View Preview</a>
-          <a href="https://github.com/ricopoulos/flow-studio/tree/main/web/flow-studio" class="btn btn-secondary" target="_blank">View Code</a>
-        </div>
-      </div>
-
-      <!-- Future Projects Placeholder -->
-      <div class="project-card" style="opacity: 0.6; border-style: dashed;">
-        <div class="project-header">
-          <div>
-            <h2 class="project-title">Future Projects</h2>
-          </div>
-          <span class="project-status status-dev">Coming Soon</span>
-        </div>
-
-        <p class="project-description">
-          Additional brand implementations and design system tests will appear here as they're developed.
-        </p>
-
-        <div class="project-meta">
-          <span>🎨 Brand: TBD</span>
-        </div>
-      </div>
+    <div class="theme-switcher__grid">
+      <button class="theme-option active" data-theme="token-pure" onclick="applyTheme('token-pure')">
+        <span class="theme-option__name">Token Pure</span>
+        <span class="theme-option__desc">Design token system showcase</span>
+      </button>
+      <button class="theme-option" data-theme="scroll-master" onclick="applyTheme('scroll-master')">
+        <span class="theme-option__name">Scroll Master</span>
+        <span class="theme-option__desc">Parallax & scroll-triggered animations</span>
+      </button>
+      <button class="theme-option" data-theme="micro-magic" onclick="applyTheme('micro-magic')">
+        <span class="theme-option__name">Micro Magic</span>
+        <span class="theme-option__desc">Micro-animations & smart interactions</span>
+      </button>
+      <button class="theme-option" data-theme="3d-depth" onclick="applyTheme('3d-depth')">
+        <span class="theme-option__name">3D Depth</span>
+        <span class="theme-option__desc">Floating UI & depth effects</span>
+      </button>
+      <button class="theme-option" data-theme="type-hero" onclick="applyTheme('type-hero')">
+        <span class="theme-option__name">Type Hero</span>
+        <span class="theme-option__desc">Bold, kinetic typography</span>
+      </button>
+      <button class="theme-option" data-theme="grid-artist" onclick="applyTheme('grid-artist')">
+        <span class="theme-option__name">Grid Artist</span>
+        <span class="theme-option__desc">Asymmetric layouts & CSS Grid</span>
+      </button>
+      <button class="theme-option" data-theme="motion-flow" onclick="applyTheme('motion-flow')">
+        <span class="theme-option__name">Motion Flow</span>
+        <span class="theme-option__desc">Smooth animations & spring physics</span>
+      </button>
+      <button class="theme-option" data-theme="dark-vivid" onclick="applyTheme('dark-vivid')">
+        <span class="theme-option__name">Dark Vivid</span>
+        <span class="theme-option__desc">High-contrast dark mode</span>
+      </button>
     </div>
-
-    <footer>
-      <p>Flow Studio Design System • Built with systematic design, not magic</p>
-    </footer>
   </div>
+
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle-btn" onclick="toggleThemeSwitcher()" aria-label="Toggle theme selector">
+    🎨
+  </button>
+
+  <!-- Header / Navigation -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <span class="logo">Flow Studio</span>
+        </div>
+        <nav class="header__nav" role="navigation" aria-label="Main navigation">
+          <a href="#how-it-works" class="nav-link">How it works</a>
+          <a href="#showcase" class="nav-link">Showcase</a>
+          <a href="#waitlist" class="btn btn--secondary btn--sm">Join waitlist</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Section 1: Hero -->
+    <section class="hero" id="hero">
+      <div class="container container--narrow">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            AI design agents that understand your brand
+          </h1>
+
+          <p class="hero__subtitle">
+            Build brand-coherent web experiences with a design system that thinks systematically, not magically.
+          </p>
+
+          <p class="hero__description">
+            Flow Studio's specialized agents—Arto, Stylist, Builder, Curator, Maestro—read your brand config, apply design tokens consistently, and generate polished UIs that feel intentional, not templated.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#waitlist" class="btn btn--primary">Start building</a>
+            <a href="#how-it-works" class="btn btn--secondary">Learn how it works</a>
+          </div>
+
+          <p class="hero__note">Currently in private beta</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: The Problem -->
+    <section class="section section--gray" id="problem">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Why Flow Studio?</p>
+          <h2 class="section__title">AI tools generate designs. Flow Studio generates design systems.</h2>
+        </div>
+
+        <div class="grid grid--3">
+          <!-- Problem 1 -->
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 8V4M20 8V4M12 28V24M20 28V24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Templates, not brands</h3>
+            <p class="card__description">
+              Most AI design tools generate generic, templated UIs that look obviously AI-made. Every output feels like it came from the same mold, ignoring your brand's unique voice and visual identity.
+            </p>
+          </div>
+
+          <!-- Problem 2 -->
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 4L4 16L16 28M16 16H28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Generate, then fix</h3>
+            <p class="card__description">
+              You spend more time correcting AI mistakes—adjusting spacing, fixing contrast, aligning to your brand—than you save. The promise of automation becomes a cycle of manual refinement.
+            </p>
+          </div>
+
+          <!-- Problem 3 -->
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="16" r="4" stroke="currentColor" stroke-width="2"/>
+                <circle cx="24" cy="16" r="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 16H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Inconsistent across projects</h3>
+            <p class="card__description">
+              AI tools forget. Each generation is isolated, with no memory of your design tokens, brand constraints, or past decisions. Maintaining consistency across projects becomes impossible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: The Flow Studio Approach -->
+    <section class="section" id="approach">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">The Flow Studio System</p>
+          <h2 class="section__title">Five specialized agents. One coherent system.</h2>
+        </div>
+
+        <div class="agents">
+          <!-- Agent 1: Arto -->
+          <div class="agent">
+            <div class="agent__content">
+              <h3 class="agent__name">Arto</h3>
+              <p class="agent__role">UX Strategist • Layout & Hierarchy</p>
+              <p class="agent__description">
+                Arto reads your brand config and creates information architecture that aligns with your brand's density, tone, and emotional goals. Structure before style.
+              </p>
+            </div>
+          </div>
+
+          <!-- Agent 2: Stylist -->
+          <div class="agent">
+            <div class="agent__content">
+              <h3 class="agent__name">Stylist</h3>
+              <p class="agent__role">Design Polish • Tokens & Visual Coherence</p>
+              <p class="agent__description">
+                Stylist translates your brand definition into concrete design tokens—colors, typography, spacing, shadows. Every value is intentional and documented.
+              </p>
+            </div>
+          </div>
+
+          <!-- Agent 3: Builder -->
+          <div class="agent">
+            <div class="agent__content">
+              <h3 class="agent__name">Builder</h3>
+              <p class="agent__role">Implementation • Semantic HTML & Components</p>
+              <p class="agent__description">
+                Builder creates clean, accessible, token-driven components and pages. Semantic HTML, responsive layouts, no hardcoded values.
+              </p>
+            </div>
+          </div>
+
+          <!-- Agent 4: Curator -->
+          <div class="agent">
+            <div class="agent__content">
+              <h3 class="agent__name">Curator</h3>
+              <p class="agent__role">Evaluator • Quality Assurance</p>
+              <p class="agent__description">
+                Curator evaluates brand alignment, accessibility compliance, visual consistency, and token usage. Catches issues before you see them.
+              </p>
+            </div>
+          </div>
+
+          <!-- Agent 5: Maestro -->
+          <div class="agent">
+            <div class="agent__content">
+              <h3 class="agent__name">Maestro</h3>
+              <p class="agent__role">Orchestrator • Workflow Coordination</p>
+              <p class="agent__description">
+                Maestro coordinates the agents, ensures the right brand config is used, and orchestrates iterative refinement based on feedback.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: How It Works -->
+    <section class="section section--gray" id="how-it-works">
+      <div class="container container--narrow">
+        <div class="section__header">
+          <h2 class="section__title">Systematic design, not magic</h2>
+        </div>
+
+        <div class="process">
+          <!-- Step 1 -->
+          <div class="process__step">
+            <div class="process__number" aria-hidden="true">1</div>
+            <div class="process__content">
+              <h3 class="process__title">Define Your Brand</h3>
+              <p class="process__description">
+                Create a machine-readable brand config (JSON) defining your voice, audience, emotions, visual direction, and constraints. This is your source of truth.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process__step">
+            <div class="process__number" aria-hidden="true">2</div>
+            <div class="process__content">
+              <h3 class="process__title">Agents Generate Systematically</h3>
+              <p class="process__description">
+                Arto creates structure, Stylist generates tokens, Builder implements components—all reading from your brand config. Every decision is traceable and intentional.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process__step">
+            <div class="process__number" aria-hidden="true">3</div>
+            <div class="process__content">
+              <h3 class="process__title">Iterate with Curator + Feedback</h3>
+              <p class="process__description">
+                Curator evaluates the output. Design Interpreter translates your feedback into structured changes. Agents refine. No fuzzy "make it better" loops.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Final CTA / Waitlist -->
+    <!-- Section 5: Showcase / Examples -->
+    <section class="section" id="showcase">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">See It In Action</p>
+          <h2 class="section__title">Built with Flow Studio</h2>
+        </div>
+
+        <div class="showcase">
+          <p class="showcase__intro">
+            Every project below was generated using Flow Studio's agent system—from brand config to production-ready code.
+            Each demonstrates systematic design thinking, token-driven styling, and brand coherence.
+          </p>
+
+          <div class="showcase__grid">
+            <!-- Example 1: This page! -->
+            <div class="showcase__item">
+              <div class="showcase__preview">
+                <div class="showcase__badge">🎨 8 Themes</div>
+                <h3 class="showcase__title">Flow Studio Landing</h3>
+                <p class="showcase__description">
+                  This page! A meta-demonstration featuring 8 interactive design variations. 
+                  Click the 🎨 button to explore different 2025 design trends—all generated from the same systematic design tokens.
+                </p>
+                <div class="showcase__meta">
+                  <span class="showcase__tag">Multi-Theme</span>
+                  <span class="showcase__tag">Scroll Animations</span>
+                  <span class="showcase__tag">Design Tokens</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Example 2: Carlton Select -->
+            <div class="showcase__item">
+              <div class="showcase__preview">
+                <div class="showcase__badge">🏨 Luxury Brand</div>
+                <h3 class="showcase__title">Carlton Select</h3>
+                <p class="showcase__description">
+                  Micro-landing page for a luxury hotel brand. Demonstrates Flow Studio's ability to create brand-specific, 
+                  premium experiences with precise typography, elegant spacing, and refined interactions.
+                </p>
+                <div class="showcase__meta">
+                  <span class="showcase__tag">Premium Aesthetic</span>
+                  <span class="showcase__tag">Micro-Interactions</span>
+                </div>
+                <a href="/flow-studio/web/carlton-select/" class="showcase__link">View Live Demo →</a>
+              </div>
+            </div>
+
+            <!-- Example 3: Placeholder for future -->
+            <div class="showcase__item showcase__item--placeholder">
+              <div class="showcase__preview">
+                <div class="showcase__badge">🚀 Coming Soon</div>
+                <h3 class="showcase__title">Your Project Here</h3>
+                <p class="showcase__description">
+                  Flow Studio can generate brand-coherent experiences for any industry: SaaS, e-commerce, portfolios, 
+                  product launches. Each one systematically designed, not templated.
+                </p>
+                <div class="showcase__meta">
+                  <span class="showcase__tag">Custom Brands</span>
+                  <span class="showcase__tag">Any Industry</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--cta" id="waitlist">
+      <div class="container container--form">
+        <div class="cta">
+          <h2 class="cta__title">Build with intention</h2>
+          <p class="cta__subtitle">
+            Flow Studio is in private beta. Join the waitlist to get early access.
+          </p>
+
+          <form class="form" action="#" method="POST" aria-label="Waitlist signup form">
+            <div class="form__group">
+              <label for="email" class="form__label">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__input"
+                placeholder="you@example.com"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="role" class="form__label">Role (optional)</label>
+              <select id="role" name="role" class="form__select">
+                <option value="">Select your role</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="product-manager">Product Manager</option>
+                <option value="founder">Founder</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Join waitlist
+            </button>
+
+            <p class="form__note">
+              We'll notify you when your access is ready.
+            </p>
+          </form>
+
+          <p class="cta__privacy">
+            We respect your privacy. No spam, unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__content">
+        <p class="footer__text">
+          © 2025 Flow Studio. Built with systematic design.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Theme Switcher & Animation Scripts -->
+  <script>
+    // Theme switcher toggle
+    function toggleThemeSwitcher() {
+      const switcher = document.getElementById('themeSwitcher');
+      switcher.classList.toggle('hidden');
+    }
+
+    // Initialize theme on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      initTheme();
+
+      // Scroll reveal animation
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, observerOptions);
+
+      // Add scroll-reveal class to sections
+      const sections = document.querySelectorAll('.section, .card, .agent, .process__step');
+      sections.forEach(section => {
+        section.classList.add('scroll-reveal');
+        observer.observe(section);
+      });
+
+      // Close theme switcher when clicking outside
+      document.addEventListener('click', function(event) {
+        const switcher = document.getElementById('themeSwitcher');
+        const toggleBtn = document.querySelector('.theme-toggle-btn');
+
+        if (!switcher.contains(event.target) && !toggleBtn.contains(event.target)) {
+          switcher.classList.add('hidden');
+        }
+      });
+
+      // Prevent closing when clicking inside the switcher
+      document.getElementById('themeSwitcher').addEventListener('click', function(event) {
+        event.stopPropagation();
+      });
+    });
+
+    // Keyboard accessibility for theme switcher
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        document.getElementById('themeSwitcher').classList.add('hidden');
+      }
+    });
+  </script>
 </body>
 </html>
